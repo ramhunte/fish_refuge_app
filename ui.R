@@ -22,13 +22,17 @@ ui <-
       # START nav_panel Evaluate
       nav_panel(
         "Evaluate",
-        navset_tab(
+        navset_pill(
           id = "evaluate_tabs", # Add this ID
 
           # nav_panel Home
           nav_panel(
             "Home",
-            h3("Home content"),
+
+            br(),
+            br(),
+
+            h3("About the Marine Reserves"),
 
             card(title = "Data", dataTableOutput('table')),
 
