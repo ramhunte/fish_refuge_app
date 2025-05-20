@@ -29,7 +29,7 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "1.1",
+        inputId = "b1_1",
         label = NULL,
         choices = c(
           "1 - No hay estimaciones de abundancia. ",
@@ -50,7 +50,7 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "1.2",
+        inputId = "b1_2",
         label = NULL,
         choices = c(
           "1 - No hay estimaciones de abundancia.",
@@ -70,7 +70,7 @@ biological_ui <- function(id) {
         "La densidad expresa el número de organismos por unidad de área. La densidad nos permite identificar si el número total de organismos ha cambiado a través del tiempo, sin importar sus tallas o pesos."
       ),
       selectInput(
-        inputId = "1.3",
+        inputId = "b1_3",
         label = NULL,
         choices = c(
           "1 - No hay estimaciones densidad.",
@@ -90,7 +90,7 @@ biological_ui <- function(id) {
         "Se refiere a la densidad de especies de alto valor comercial o ecológico que pueden ser indicadoras de éxito."
       ),
       selectInput(
-        inputId = "1.4",
+        inputId = "b1_4",
         label = NULL,
         choices = c(
           "1 - No hay estimaciones densidad.",
@@ -111,7 +111,7 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "1.5",
+        inputId = "b1_5",
         label = NULL,
         choices = c(
           "1 - No hay estimaciones de biomasa.",
@@ -132,7 +132,7 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "1.6",
+        inputId = "b1_6",
         label = NULL,
         choices = c(
           "1 - No hay estimaciones de biomasa.",
@@ -153,7 +153,7 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "1.7",
+        inputId = "b1_7",
         label = NULL,
         choices = c(
           "1 - No hay estimaciones del índice de Shannon.",
@@ -174,7 +174,7 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "1.8",
+        inputId = "b1_8",
         label = NULL,
         choices = c(
           "1 - No hay estimaciones de la  riqueza.",
@@ -195,7 +195,7 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "1.9",
+        inputId = "b1_9",
         label = NULL,
         choices = c(
           "1 - No hay estimaciones de la  riqueza.",
@@ -216,7 +216,7 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "1.10",
+        inputId = "b1_10",
         label = NULL,
         choices = c(
           "1 - No hay estimaciones de la estructura de tallas.",
@@ -237,7 +237,7 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "1.11",
+        inputId = "b1_11",
         label = NULL,
         choices = c(
           "1 - No hay estimaciones de la estructura de tallas.",
@@ -259,9 +259,5 @@ biological_ui <- function(id) {
 
 biological_server <- function(id) {
   moduleServer(id, function(input, output, session) {
-    observe({
-      print(input$monitoring_score)
-      print(input$habitat_score)
-    })
   })
 }

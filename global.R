@@ -10,6 +10,7 @@ source("modules/home_module.R")
 source("modules/design_module.R")
 source("modules/governance_module.R")
 source("modules/biological_module.R")
+source("modules/summary_module.R")
 
 # reading in data
 data <- readxl::read_excel(

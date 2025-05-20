@@ -4,9 +4,12 @@ server <- function(input, output, session) {
   design_server("design")
   governance_server("governance")
   biological_server("biological")
+  summary_server("summary")
 
   # data table render
   output$table <- renderDataTable(data)
+
+  ###########################################################
 
   ###################### tab uodates #######################
 
@@ -30,5 +33,13 @@ server <- function(input, output, session) {
 
   observeEvent(input$prev_biological, {
     updateTabsetPanel(session, "evaluate_tabs", selected = "Governance")
+  })
+
+  observeEvent(input$next_biological, {
+    updateTabsetPanel(session, "evaluate_tabs", selected = "Summary")
+  })
+
+  observeEvent(input$prev_summary, {
+    updateTabsetPanel(session, "evaluate_tabs", selected = "Biological")
   })
 }

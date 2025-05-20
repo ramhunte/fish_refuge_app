@@ -34,9 +34,7 @@ ui <-
 
             h3("About the Marine Reserves"),
 
-            card(title = "Data", dataTableOutput('table')),
-
-            # home_ui("home"),
+            card(title = "Data", height = "550px", dataTableOutput('table')),
 
             fluidRow(
               column(12, align = "right", next_btn("next_home"))
@@ -79,6 +77,20 @@ ui <-
             fluidRow(
               column(1),
               column(10, biological_ui("biological")),
+              column(1)
+            ),
+            fluidRow(
+              column(6, align = "left", back_btn("prev_biological")),
+              column(6, align = "right", next_btn("next_biological"))
+            )
+          ),
+
+          # nav_panel Summary
+          nav_panel(
+            "Summary",
+            fluidRow(
+              column(1),
+              column(10, summary_ui("summary")),
               column(1)
             ),
             fluidRow(

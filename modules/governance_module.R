@@ -431,12 +431,5 @@ governance_ui <- function(id) {
 
 governance_server <- function(id) {
   moduleServer(id, function(input, output, session) {
-    # Example: observe or return values
-    observe({
-      # Print values or store in a reactiveValues list
-      print(input$data_score)
-      print(input$governance_score)
-      print(input$socio_score)
-    })
   })
 }

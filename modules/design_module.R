@@ -27,14 +27,15 @@ design_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "1.1",
+        inputId = ns("d1_1"),
         label = NULL,
         choices = c(
-          "1 - No se ha realizado el ejercicio",
-          "2 - Se han realizado reuniones de trabajo para colecta de información",
-          "3 - Se cuenta con información sistematizada y curada de problemáticas y actores",
-          "4 - ",
-          "5 - Se cuenta con un documento en el que se ha identificado la problemática y resultados esperados."
+          "1 - No se ha realizado el ejercicio" = 1,
+          "2 - Se han realizado reuniones de trabajo para colecta de información" = 2,
+          "3 - Se cuenta con información sistematizada y curada de problemáticas y actores" = 3,
+          "4 - " = 4,
+          "5 - Se cuenta con un documento en el que se ha identificado la problemática y resultados esperados." = 5,
+          "NA" = NA
         ),
         selected = "3 - Se cuenta con información sistematizada y curada de problemáticas y actores"
       ),
@@ -46,14 +47,15 @@ design_ui <- function(id) {
         "Hacer un listado de problemáticas ambientales que se busca atender, considerando las causas y actores que dieron origen a este problema, y qué resultado se espera obtener. Este ejercicio se deberá de hacer con actores clave locales. Se imparte platica general de herramientas de manejo."
       ),
       selectInput(
-        inputId = "1.2",
+        inputId = ns("d1_2"),
         label = NULL,
         choices = c(
-          "1 - No se ha realizado identificación de participantes.",
-          "2 - No se ha realizado identificación de participantes.",
-          "3 - Se cuenta con una lista verificada y curada de participantes catalogados con primarios y secundarios.",
-          "4 - Los participantes primarios identifican su rol en el proceso.",
-          "5 - Los participantes primarios cumplen con su rol en el proceso."
+          "1 - No se ha realizado identificación de participantes." = 1,
+          "2 - No se ha realizado identificación de participantes." = 2,
+          "3 - Se cuenta con una lista verificada y curada de participantes catalogados con primarios y secundarios." = 3,
+          "4 - Los participantes primarios identifican su rol en el proceso." = 4,
+          "5 - Los participantes primarios cumplen con su rol en el proceso." = 5,
+          "NA" = NA
         ),
         selected = "3 - Se cuenta con una lista verificada y curada de participantes catalogados con primarios y secundarios."
       ),
@@ -67,14 +69,15 @@ design_ui <- function(id) {
         "Se realiza una caracterización inicial con información bibliográfica y conocimiento tradicional, para conocer los ecosistemas y especies clave. Identificar iniciativas de conservación (áreas protegidas), actividades económicas como pesca, turismo, puertos de altura comerciales y turísticos, puentes, carreteras, presas, etc., con el objeto de determinar la compatibilidad con estos usos ya establecidos. "
       ),
       selectInput(
-        inputId = "1.3",
+        inputId = ns("d1_3"),
         label = NULL,
         choices = c(
-          "1 - No se ha identificado el área a conservar.",
-          "2 - Se inició la identificación de actividades y usos.",
-          "3 - Información de caracterización verificada y curada.",
-          "4 - Se han identificado los sitios a proteger considerando el conocimiento tradicional.",
-          "5 - Se ha elaborado un documento de caracterización y compatibilidad."
+          "1 - No se ha identificado el área a conservar." = 1,
+          "2 - Se inició la identificación de actividades y usos." = 2,
+          "3 - Información de caracterización verificada y curada." = 3,
+          "4 - Se han identificado los sitios a proteger considerando el conocimiento tradicional." = 4,
+          "5 - Se ha elaborado un documento de caracterización y compatibilidad." = 5,
+          "NA" = NA
         ),
         selected = "3 - Información de caracterización verificada y curada."
       ),
@@ -85,14 +88,15 @@ design_ui <- function(id) {
         "Con apoyo de personas con experiencia en la promoción de herramientas de manejo, se emite una opinión técnica de la viabilidad del proyecto."
       ),
       selectInput(
-        inputId = "1.4",
+        inputId = ns("d1_4"),
         label = NULL,
         choices = c(
-          "1 - No se ha realizado opinión técnica.",
-          "2 - Se ha iniciado la colecta de información.",
-          "3 - Se ha sistematizado e integrado toda la información.",
-          "4 - Se ha revisado la información de viabilidad del proyecto.",
-          "5 - Se cuenta con una opinión de viabilidad del proyecto."
+          "1 - No se ha realizado opinión técnica." = 1,
+          "2 - Se ha iniciado la colecta de información." = 2,
+          "3 - Se ha sistematizado e integrado toda la información." = 3,
+          "4 - Se ha revisado la información de viabilidad del proyecto." = 4,
+          "5 - Se cuenta con una opinión de viabilidad del proyecto." = 5,
+          "NA" = NA
         ),
         selected = "3 - Se ha sistematizado e integrado toda la información."
       ),
@@ -102,14 +106,15 @@ design_ui <- function(id) {
         "Se realiza un plan de trabajo donde se especifican las actividades de socialización y diseño. Se definen participantes primarios y el rol de cada uno. El tiempo y el costo aproximado de cada actividad."
       ),
       selectInput(
-        inputId = "1.5",
+        inputId = ns("d1_5"),
         label = NULL,
         choices = c(
-          "1 - No se ha realizado el plan de acción.",
-          "2 - Se inició con la identificación de actividades.",
-          "3 - Se han integrado las actividades sin presupuesto.",
-          "4 - Se integra presupuesto de las actividades.",
-          "5 - Se cuenta con plan de acción y costos de actividades."
+          "1 - No se ha realizado el plan de acción." = 1,
+          "2 - Se inició con la identificación de actividades." = 2,
+          "3 - Se han integrado las actividades sin presupuesto." = 3,
+          "4 - Se integra presupuesto de las actividades." = 4,
+          "5 - Se cuenta con plan de acción y costos de actividades." = 5,
+          "NA" = NA
         ),
         selected = "3 - Se han integrado las actividades sin presupuesto.",
       )
@@ -139,14 +144,15 @@ design_ui <- function(id) {
         "Se debe de presentar la iniciativa de herramienta de manejo pesquero a los lideres del sectores de interés ( sector pesquero, turístico, gobierno municipal, estatal, federal, etc.). Invitarlos a formar parte de la iniciativa, además de solicitar su apoyo para  liderar la difusión de la herramienta de manejo pesquero."
       ),
       selectInput(
-        inputId = "2.1",
+        inputId = ns("d2_1"),
         label = NULL,
         choices = c(
-          "1 - No se ha realizado acercamiento con lideres.",
-          "2 - Se han realizado reuniones con < 50% de los lideres",
-          "3 - Se han tenido reuniones con > 50% y < 80% de lideres de los lideres.",
-          "4 - Se han tenido reuniones con >80% de lideres.",
-          "5 - Los lideres apoyan la iniciativa."
+          "1 - No se ha realizado acercamiento con lideres." = 1,
+          "2 - Se han realizado reuniones con < 50% de los lideres" = 2,
+          "3 - Se han tenido reuniones con > 50% y < 80% de lideres de los lideres." = 3,
+          "4 - Se han tenido reuniones con >80% de lideres." = 4,
+          "5 - Los lideres apoyan la iniciativa." = 5,
+          "NA" = NA
         ),
         "3 - Se han tenido reuniones con > 50% y < 80% de lideres de los lideres."
       ),
@@ -158,14 +164,15 @@ design_ui <- function(id) {
         "Con el apoyo de participantes clave (locales), se presenta la información a la mayor cantidad de personas posibles, con la finalidad de dar a conocer la iniciativa, los objetivos y sus alcances. Por ejemplo, sector pesquero, turístico, restaurantero, gobierno municipal, estatal, federal, etc.)"
       ),
       selectInput(
-        inputId = "2.2",
+        inputId = ns("d2_2"),
         label = NULL,
         choices = c(
-          "1 - No se ha realizado acercamiento con sectores.",
-          "2 - Se han realizado reuniones con < 50% de los sectores",
-          "3 - Se han tenido reuniones con > 50% y < 80% de lideres de los sectores",
-          "4 - Se han tenido reuniones con >80% de los sectores.",
-          "5 - La mayoría de los sectores están a favor."
+          "1 - No se ha realizado acercamiento con sectores." = 1,
+          "2 - Se han realizado reuniones con < 50% de los sectores" = 2,
+          "3 - Se han tenido reuniones con > 50% y < 80% de lideres de los sectores" = 3,
+          "4 - Se han tenido reuniones con >80% de los sectores." = 4,
+          "5 - La mayoría de los sectores están a favor." = 5,
+          "NA" = NA
         ),
         "3 - Se han tenido reuniones con > 50% y < 80% de lideres de los sectores",
       ),
@@ -177,14 +184,15 @@ design_ui <- function(id) {
         "Se difunde la iniciativa por diversos medios de comunicación con información clave. Es necesario identificar qué medios tienen mayor alcance en la localidad (perifoneo, foros locales de noticias, estaciones de radio, canales de televisión, gaceta local, redes sociales)."
       ),
       selectInput(
-        inputId = "2.3",
+        inputId = ns("d2_3"),
         label = NULL,
         choices = c(
-          "1 - No se ha realizado difusión.",
-          "2 - Se esta creando el contenido para difusión.",
-          "3 - Se ha iniciado la difusión en algunos medios locales.",
-          "4 - Se ha difundido la información en el 50% de los medios locales.",
-          "5 - Se ha difundido la información en los  medios locales de mayor impacto."
+          "1 - No se ha realizado difusión." = 1,
+          "2 - Se esta creando el contenido para difusión." = 2,
+          "3 - Se ha iniciado la difusión en algunos medios locales." = 3,
+          "4 - Se ha difundido la información en el 50% de los medios locales." = 4,
+          "5 - Se ha difundido la información en los  medios locales de mayor impacto." = 5,
+          "NA" = NA
         ),
         "3 - Se ha iniciado la difusión en algunos medios locales.",
       )
@@ -213,14 +221,15 @@ design_ui <- function(id) {
         "Se presenta información detallada del proceso de creación de una herramienta de manejo a los participantes primarios y secundarios, haciendo referencia de los tiempos, tramites administrativos, documentos de sustento, así como beneficios y casos de éxito."
       ),
       selectInput(
-        inputId = "3.1",
+        inputId = ns("d3_1"),
         label = NULL,
         choices = c(
-          "1 - No se ha presentado información detallada.",
-          "2 - Se tiene agendado  reuniones con participantes clave.",
-          "3 - Se ha presentado la información al 50% de participantes clave.",
-          "4 - ",
-          "5 - Se ha prestando la información a la mayoría de los participantes clave."
+          "1 - No se ha presentado información detallada." = 1,
+          "2 - Se tiene agendado  reuniones con participantes clave." = 2,
+          "3 - Se ha presentado la información al 50% de participantes clave." = 3,
+          "4 - " = 4,
+          "5 - Se ha prestando la información a la mayoría de los participantes clave." = 5,
+          "NA" = NA
         ),
         "3 - Se ha presentado la información al 50% de participantes clave."
       ),
@@ -234,14 +243,15 @@ design_ui <- function(id) {
         "El proceso de diseño debe de ser transparente, planeado y consensuado. Además se deben de rendir cuentas de las acciones y recursos económicos aplicados. Los objetivos de la herramienta de manejo y las especies a proteger son elaborados con el apoyo de información biológica y ambiental, y basados en el conocimiento local. Los indicadores de evaluación deberán de ser realistas y alcanzables (por ejemplo: biomasa, abundancia, estructura de tallas, diversidad). Se recomienda considerar los principios biofísicos para maximizar el éxito del diseño."
       ),
       selectInput(
-        inputId = "3.2",
+        inputId = ns("d3_2"),
         label = NULL,
         choices = c(
-          "1 - No se han realizado los talleres para definir los objetivos e indicadores.",
-          "2 - Se tiene agendado talleres con sectores.",
-          "3 - Se han realizado talleres con 50% de sectores participantes.",
-          "4 - ",
-          "5 - Se han realizado talleres con 100% de sectores participantes."
+          "1 - No se han realizado los talleres para definir los objetivos e indicadores." = 1,
+          "2 - Se tiene agendado talleres con sectores." = 2,
+          "3 - Se han realizado talleres con 50% de sectores participantes." = 3,
+          "4 - " = 4,
+          "5 - Se han realizado talleres con 100% de sectores participantes." = 5,
+          "NA" = NA
         ),
         "3 - Se han realizado talleres con 50% de sectores participantes.",
       ),
@@ -253,14 +263,15 @@ design_ui <- function(id) {
         "Se determina la ubicación, tamaño, forma temporalidad y número de polígonos. También, se identifican los riesgos en la zona (contaminación, huracanes, etc.) y los efectos del cambio climático. Se recomienda utilizar los principios biofísicos de diseño como referencia."
       ),
       selectInput(
-        inputId = "3.3",
+        inputId = ns("d3_3"),
         label = NULL,
         choices = c(
-          "1 - No se ha realizado taller de diseño.",
-          "2 - Se han agendado talleres de diseño.",
-          "3 - Se cuenta con 50% del diseño de la herramienta de manejo.",
-          "4 - Se cuenta con un diseño sin considerar principios.",
-          "5 - Se cuenta con un diseño considerando principios."
+          "1 - No se ha realizado taller de diseño." = 1,
+          "2 - Se han agendado talleres de diseño." = 2,
+          "3 - Se cuenta con 50% del diseño de la herramienta de manejo." = 3,
+          "4 - Se cuenta con un diseño sin considerar principios." = 4,
+          "5 - Se cuenta con un diseño considerando principios." = 5,
+          "NA" = NA
         ),
         "3 - Se cuenta con 50% del diseño de la herramienta de manejo."
       ),
@@ -272,14 +283,15 @@ design_ui <- function(id) {
         "Se debe de considerar el fortalecimiento económico de los participantes con alternativas económicas compatibles con la herramienta de manejo, considerando el conocimiento local, experiencias de sitios aledaños o regionales e investigación científica en el proceso de diseño. También es necesario que la información sea abierta, clara y expedita. Se deben de comunicar de manera efectiva los avances y logros. Se debe de considerar fuentes alternativas de ingreso económico y capacitación técnica y de capacidades blandas de los participantes locales."
       ),
       selectInput(
-        inputId = "3.4",
+        inputId = ns("d3_4"),
         label = NULL,
         choices = c(
-          "1 - No se han realizado talleres.",
-          "2 - Se tiene agendado talleres con participantes.",
-          "3 - Se han realizado talleres con 50% de participantes identificados.",
-          "4 - ",
-          "5 - Se han realizado talleres con la mayoría de participantes identificados."
+          "1 - No se han realizado talleres." = 1,
+          "2 - Se tiene agendado talleres con participantes." = 2,
+          "3 - Se han realizado talleres con 50% de participantes identificados." = 3,
+          "4 - " = 4,
+          "5 - Se han realizado talleres con la mayoría de participantes identificados." = 5,
+          "NA" = NA
         ),
         "3 - Se han realizado talleres con 50% de participantes identificados.",
       ),
@@ -293,14 +305,15 @@ design_ui <- function(id) {
         "Realizar visitas a campo para verificar coordenadas del polígono propuesto. Durante este proceso se pueden hacer correcciones a las dimensiones considerando referencias físicas o profundidades. Además se colecta información de especies presentes, abundancia, tallas, caracterización del fondo y hábitats en el polígono."
       ),
       selectInput(
-        inputId = "3.5",
+        inputId = ns("d3_5"),
         label = NULL,
         choices = c(
-          "1 - No se ha realizado verificación y prospección.",
-          "2 - Se ha agendado la verificación y prospección.",
-          "3 - Se realizó  la verificación y prospección.",
-          "4 - Se corrobora la información de campo con el diseño.",
-          "5 - Los participantes secundarios dan el visto bueno al diseño."
+          "1 - No se ha realizado verificación y prospección." = 1,
+          "2 - Se ha agendado la verificación y prospección." = 2,
+          "3 - Se realizó  la verificación y prospección." = 3,
+          "4 - Se corrobora la información de campo con el diseño." = 4,
+          "5 - Los participantes secundarios dan el visto bueno al diseño." = 5,
+          "NA" = NA
         ),
         "3 - Se realizó  la verificación y prospección."
       ),
@@ -314,14 +327,15 @@ design_ui <- function(id) {
         "Realizar una revisión de la literatura científica disponible y el conocimiento tradicional de los participantes locales en temas biológicos, pesqueros, oceanográficos y de salud para la elaboración del documento justificativo para la creación de una herramienta de manejo."
       ),
       selectInput(
-        inputId = "3.6",
+        inputId = ns("d3_6"),
         label = NULL,
         choices = c(
-          "1 - No se ha realizado el documento justificativo.",
-          "2 - Se ha recopilado la información necesaria en campo y bibliográfica.",
-          "3 - Se ha completado 50% del documento.",
-          "4 - Se ha completado 100% del documento.",
-          "5 - El documento ha sido validado por los participantes primarios con su consentimiento."
+          "1 - No se ha realizado el documento justificativo." = 1,
+          "2 - Se ha recopilado la información necesaria en campo y bibliográfica." = 2,
+          "3 - Se ha completado 50% del documento." = 3,
+          "4 - Se ha completado 100% del documento." = 4,
+          "5 - El documento ha sido validado por los participantes primarios con su consentimiento." = 5,
+          "NA" = NA
         ),
         "3 - Se ha completado 50% del documento."
       ),
@@ -333,14 +347,15 @@ design_ui <- function(id) {
         "Petición por escrito para solicitar una herramienta de manejo. Esta deberá ser entregada a la, o las instancias correspondientes, será necesario tener un acuse de recibido. Los promoventes deberán estar al pendiente de pedir actualización del avance del tramite."
       ),
       selectInput(
-        inputId = "3.7",
+        inputId = ns("d3_7"),
         label = NULL,
         choices = c(
-          "1 - No se ha elaborado documento de solicitud.",
-          "2 - Se ha elaborado documento de solicitud.",
-          "3 - El documento de solicitud recibe visto bueno de sectores.",
-          "4 - El documento de solicitud ha sido firmado.",
-          "5 - Acuse de recibido de solicitud."
+          "1 - No se ha elaborado documento de solicitud." = 1,
+          "2 - Se ha elaborado documento de solicitud." = 2,
+          "3 - El documento de solicitud recibe visto bueno de sectores." = 3,
+          "4 - El documento de solicitud ha sido firmado." = 4,
+          "5 - Acuse de recibido de solicitud." = 5,
+          "NA" = NA
         ),
         "3 - El documento de solicitud recibe visto bueno de sectores.",
       ),
@@ -352,14 +367,15 @@ design_ui <- function(id) {
         "La herramienta de manejo debe ser oficializada mediante instrumentos jurídicos o acuerdos comunitarios. Este compromiso debe permanecer durante el tiempo acordado."
       ),
       selectInput(
-        inputId = "3.8",
+        inputId = ns("d3_8"),
         label = NULL,
         choices = c(
-          "1 - No se ha realizado ningún contacto de seguimiento.",
-          "2 - Se ha solicitado actualización de proceso una sola vez.",
-          "3 - Se ha solicitado  actualización de proceso mas de una vez sin recibir respuesta.",
-          "4 - Se conoce el estado del proceso de tramite.",
-          "5 - Se cuenta con decreto o acuerdo comunitario del establecimiento por escrito."
+          "1 - No se ha realizado ningún contacto de seguimiento." = 1,
+          "2 - Se ha solicitado actualización de proceso una sola vez." = 2,
+          "3 - Se ha solicitado  actualización de proceso mas de una vez sin recibir respuesta." = 3,
+          "4 - Se conoce el estado del proceso de tramite." = 4,
+          "5 - Se cuenta con decreto o acuerdo comunitario del establecimiento por escrito." = 5,
+          "NA" = NA
         ),
         "3 - Se ha solicitado  actualización de proceso mas de una vez sin recibir respuesta.",
       )
@@ -390,14 +406,15 @@ design_ui <- function(id) {
         "Se seleccionan las técnicas de monitoreo para poder realizar la colecta de datos, considerando los indicadores necesarios para medir los cambios biológicos, sociales, económicos, pesqueros, entre otros."
       ),
       selectInput(
-        inputId = "4.1",
+        inputId = ns("d4_1"),
         label = NULL,
         choices = c(
-          "1 - No se ha definido las técnicas de monitoreo.",
-          "2 - Revisión de la literatura científica.",
-          "3 - Taller para escoger o adecuar técnicas de monitoreo, e indicadores de evaluación.",
-          "4 - Se establecen metodologías de monitoreo, lista de especies e indicadores.",
-          "5 - Se pilotean metodologías de monitoreo e indicadores."
+          "1 - No se ha definido las técnicas de monitoreo." = 1,
+          "2 - Revisión de la literatura científica." = 2,
+          "3 - Taller para escoger o adecuar técnicas de monitoreo, e indicadores de evaluación." = 3,
+          "4 - Se establecen metodologías de monitoreo, lista de especies e indicadores." = 4,
+          "5 - Se pilotean metodologías de monitoreo e indicadores." = 5,
+          "NA" = NA
         ),
         "3 - Taller para escoger o adecuar técnicas de monitoreo, e indicadores de evaluación.",
       ),
@@ -411,14 +428,15 @@ design_ui <- function(id) {
         "Se realizan certificación de buceo autónomo y en metodologías para el monitoreo biológico y oceanográfico de reservas marinas."
       ),
       selectInput(
-        inputId = "4.2",
+        inputId = ns("d4_2"),
         label = NULL,
         choices = c(
-          "1 - No se ha capacitado a personas.",
-          "2 - Selección de personas a capacitar.",
-          "3 - Personas certificadas en buceo autónomo nivel 1 (mínimo).",
-          "4 - Personas capacitadas en monitoreo biofísico y manejo de datos.",
-          "5 - Se crea grupo de monitoreo comunitario."
+          "1 - No se ha capacitado a personas." = 1,
+          "2 - Selección de personas a capacitar." = 2,
+          "3 - Personas certificadas en buceo autónomo nivel 1 (mínimo)." = 3,
+          "4 - Personas capacitadas en monitoreo biofísico y manejo de datos." = 4,
+          "5 - Se crea grupo de monitoreo comunitario." = 5,
+          "NA" = NA
         ),
         "3 - Personas certificadas en buceo autónomo nivel 1 (mínimo).",
       ),
@@ -432,14 +450,15 @@ design_ui <- function(id) {
         "Se integran mujeres en el proceso de certificación de buceo, metodologías para el monitoreo biológico,  oceanográfico de reservas marinas, así como el manejo de datos."
       ),
       selectInput(
-        inputId = "4.3",
+        inputId = ns("d4_3"),
         label = NULL,
         choices = c(
-          "1 - No se integro mujeres en los cursos de capacitación.",
-          "2 - el 10 % de los integrantes de grupos de monitoreo son mujeres.",
-          "3 - el 20 % de los integrantes de grupos de monitoreo son mujeres.",
-          "4 - el 40 % de los integrantes de grupos de monitoreo son mujeres.",
-          "5 - Al menos el 50 % de los integrantes de grupos de monitoreo son mujeres."
+          "1 - No se integro mujeres en los cursos de capacitación." = 1,
+          "2 - el 10 % de los integrantes de grupos de monitoreo son mujeres." = 2,
+          "3 - el 20 % de los integrantes de grupos de monitoreo son mujeres." = 3,
+          "4 - el 40 % de los integrantes de grupos de monitoreo son mujeres." = 4,
+          "5 - Al menos el 50 % de los integrantes de grupos de monitoreo son mujeres." = 5,
+          "NA" = NA
         ),
         "3 - el 20 % de los integrantes de grupos de monitoreo son mujeres.",
       ),
@@ -453,14 +472,15 @@ design_ui <- function(id) {
         "Se integran juventudes en el proceso de certificación de buceo, metodologías para el monitoreo biológico,  oceanográfico de reservas marinas, así como el manejo de datos. (una juventud es una persona de 18 a 29 años de edad)."
       ),
       selectInput(
-        inputId = "4.4",
+        inputId = ns("d4_4"),
         label = NULL,
         choices = c(
-          "1 - No se integraron juventudes en los cursos de capacitación.",
-          "2 - al menos un  integrante de grupos de monitoreo son juventudes.",
-          "3 - el 20 % de los integrantes de grupos de monitoreo son juventudes.",
-          "4 - el 40 % de los integrantes de grupos de monitoreo son juventudes.",
-          "5 - Al menos el 50 % de los integrantes de grupos de monitoreo son juventudes."
+          "1 - No se integraron juventudes en los cursos de capacitación." = 1,
+          "2 - al menos un  integrante de grupos de monitoreo son juventudes." = 2,
+          "3 - el 20 % de los integrantes de grupos de monitoreo son juventudes." = 3,
+          "4 - el 40 % de los integrantes de grupos de monitoreo son juventudes." = 4,
+          "5 - Al menos el 50 % de los integrantes de grupos de monitoreo son juventudes." = 5,
+          "NA" = NA
         ),
         "3 - el 20 % de los integrantes de grupos de monitoreo son juventudes.",
       ),
@@ -472,14 +492,15 @@ design_ui <- function(id) {
         "Se capacita a personas para colectar información complementaria según las necesidades locales, que contribuya a la evaluación de funcionamiento (monitoreo pesquero, social, económico, etc.)"
       ),
       selectInput(
-        inputId = "4.5",
+        inputId = ns("d4_5"),
         label = NULL,
         choices = c(
-          "1 - No hay capacitaciones complementarias.",
-          "2 - Se identifica acciones de monitoreo complementarias.",
-          "3 - Se imparte el 50% de las capacitaciones complementarias.",
-          "4 - Se imparte el 100% de las capacitaciones complementarias.",
-          "5 - El grupo de monitoreo comunitario cubre las necesidades locales."
+          "1 - No hay capacitaciones complementarias." = 1,
+          "2 - Se identifica acciones de monitoreo complementarias." = 2,
+          "3 - Se imparte el 50% de las capacitaciones complementarias." = 3,
+          "4 - Se imparte el 100% de las capacitaciones complementarias." = 4,
+          "5 - El grupo de monitoreo comunitario cubre las necesidades locales." = 5,
+          "NA" = NA
         ),
         "3 - Se imparte el 50% de las capacitaciones complementarias.",
       ),
@@ -491,14 +512,15 @@ design_ui <- function(id) {
         "Junto con la identificación de las acciones de manejo, es necesario calcular los costos de operación de cada componente, y hacer un plan de recaudación para cubrir los costos operativas durante la vigencia de la herramienta de manejo pesquero, además es necesario identificar oportunidades de capacitación y financiamiento. Una herramienta útil para hacer el costeo se puede consultar en https://innovacionazul.shinyapps.io/AppCosteo/"
       ),
       selectInput(
-        inputId = "4.6",
+        inputId = ns("d4_6"),
         label = NULL,
         choices = c(
-          "1 - No hay un plan de sostenibilidad financiera.",
-          "2 - Se esta calculando costos operativos de cada componente.",
-          "3 - Los manejadores adquieren capacitación en temas financieros.",
-          "4 - Los manejadores aportan un porcentaje de los costos de operación.",
-          "5 - Se esta implementando el plan de sostenibilidad financiera y los manejadores aumentan el porcentaje de aportación."
+          "1 - No hay un plan de sostenibilidad financiera." = 1,
+          "2 - Se esta calculando costos operativos de cada componente." = 2,
+          "3 - Los manejadores adquieren capacitación en temas financieros." = 3,
+          "4 - Los manejadores aportan un porcentaje de los costos de operación." = 4,
+          "5 - Se esta implementando el plan de sostenibilidad financiera y los manejadores aumentan el porcentaje de aportación." = 5,
+          "NA" = NA
         ),
         "3 - Los manejadores adquieren capacitación en temas financieros.",
       ),
@@ -512,14 +534,15 @@ design_ui <- function(id) {
         "La actividad consiste en realizar reportes técnicos y financieros para hacer notar los resultados en el periodo de vigencia. La información clave se difunde con sectores primarios y secundarios, y es utilizada para recaudación."
       ),
       selectInput(
-        inputId = "4.7",
+        inputId = ns("d4_7"),
         label = NULL,
         choices = c(
-          "1 - No se cuenta con información para difundir.",
-          "2 - Se cuenta con información sistematizada pero no se difunde.",
-          "3 - Se difunde información esporádicamente.",
-          "4 - Se cuenta con una campaña de difusión y se ejecuta al 50%.",
-          "5 - Se cuenta con una campaña de difusión y se ejecuta al 100%."
+          "1 - No se cuenta con información para difundir." = 1,
+          "2 - Se cuenta con información sistematizada pero no se difunde." = 2,
+          "3 - Se difunde información esporádicamente." = 3,
+          "4 - Se cuenta con una campaña de difusión y se ejecuta al 50%." = 4,
+          "5 - Se cuenta con una campaña de difusión y se ejecuta al 100%." = 5,
+          "NA" = NA
         ),
         "3 - Se difunde información esporádicamente.",
       )
@@ -550,14 +573,15 @@ design_ui <- function(id) {
         "Con los resultados de las acciones de manejo se identifica los aciertos y las áreas de oportunidad para dar continuidad a la herramienta de manejo. Si es necesario se realizan adecuaciones a los componentes de manejo, con el fin de reducir costos de operación o aumentar los beneficios ambientales o sociales."
       ),
       selectInput(
-        inputId = "5.1",
+        inputId = ns("d5_1"),
         label = NULL,
         choices = c(
-          "1 - No se realizó valoración de resultados y necesidades de adaptación.",
-          "2 - ",
-          "3 - Se han valorado los resultados y se identifican adaptaciones.",
-          "4 - Se hace un plan de adaptación a componentes de manejo.",
-          "5 - Se implementan adaptaciones a componentes de manejo."
+          "1 - No se realizó valoración de resultados y necesidades de adaptación." = 1,
+          "2 - " = 2,
+          "3 - Se han valorado los resultados y se identifican adaptaciones." = 3,
+          "4 - Se hace un plan de adaptación a componentes de manejo." = 4,
+          "5 - Se implementan adaptaciones a componentes de manejo." = 5,
+          "NA" = NA
         ),
         "3 - Se han valorado los resultados y se identifican adaptaciones.",
       ),
@@ -571,14 +595,15 @@ design_ui <- function(id) {
         "Consiste en tomar la decisión de permanencia de la herramienta de manejo sin que exista modificación alguna en su forma, tamaño u objetivos considerando los resultados. También existe la opción de no continuar con la herramienta de manejo. Si llegase a considerar la modificación, de su forma, tamaño, modalidad o vigencia, deberá de evaluarse como un proceso nuevo."
       ),
       selectInput(
-        inputId = "5.2",
+        inputId = ns("d5_2"),
         label = NULL,
         choices = c(
-          "1 - El proceso de renovación no ha iniciado.",
-          "2 - Herramienta de manejo no renovada.",
-          "3 - Los documentos y soporte técnico están listos.",
-          "4 - Herramienta de manejo renovada en una ocasión.",
-          "5 - Herramienta de manejo renovada en mas de una ocasión."
+          "1 - El proceso de renovación no ha iniciado." = 1,
+          "2 - Herramienta de manejo no renovada." = 2,
+          "3 - Los documentos y soporte técnico están listos." = 3,
+          "4 - Herramienta de manejo renovada en una ocasión." = 4,
+          "5 - Herramienta de manejo renovada en mas de una ocasión." = 5,
+          "NA" = NA
         ),
         "3 - Los documentos y soporte técnico están listos.",
       ),
@@ -592,19 +617,21 @@ design_ui <- function(id) {
         "Al final de cada periodo se debe realizar la presentación de los resultados y evaluación en la herramienta de manejo, y se hace notar que la herramienta es una solución a la problemática planteada al inicio, y que esta se puede escalar a otros sitios."
       ),
       selectInput(
-        inputId = "5.3",
+        inputId = ns("d5_3"),
         label = NULL,
         choices = c(
-          "1 - No se han creado y difundido los resultados.",
-          "2 - Se ha creado contenido pero no se ha difundido.",
-          "3 - Contenido compartido con actores primarios y secundarios locales.",
-          "4 - Contenido compartido con sectores de gobierno y OSC.",
-          "5 - Solución compartida con actores aledaños, regionales, nacionales o internacionales."
+          "1 - No se han creado y difundido los resultados." = 1,
+          "2 - Se ha creado contenido pero no se ha difundido." = 2,
+          "3 - Contenido compartido con actores primarios y secundarios locales." = 3,
+          "4 - Contenido compartido con sectores de gobierno y OSC." = 4,
+          "5 - Solución compartida con actores aledaños, regionales, nacionales o internacionales." = 5,
+          "NA" = NA
         ),
         "3 - Contenido compartido con actores primarios y secundarios locales.",
       )
     ),
     br(),
+    textOutput(ns("d1_text")),
   )
 }
 ####################################################################
@@ -612,11 +639,98 @@ design_ui <- function(id) {
 ####################################################################
 design_server <- function(id) {
   moduleServer(id, function(input, output, session) {
-    # Handle reactivity, validation, etc.
+    # Return the input as a reactive
+
+    d1 <- reactive({
+      mean(
+        as.numeric(
+          c(
+            input$d1_1,
+            input$d1_2,
+            input$d1_3,
+            input$d1_4,
+            input$d1_5
+          )
+        ),
+        na.rm = TRUE
+      )
+    })
+
+    d2 <- reactive({
+      mean(
+        as.numeric(
+          c(input$d2_1, input$d2_2, input$d2_3)
+        ),
+        na.rm = TRUE
+      )
+    })
+
+    d3 <- reactive({
+      mean(
+        as.numeric(
+          c(
+            input$d3_1,
+            input$d3_2,
+            input$d3_3,
+            input$d3_4,
+            input$d3_5,
+            input$d3_6,
+            input$d3_7
+          )
+        ),
+        na.rm = TRUE
+      )
+    })
+
+    d4 <- reactive({
+      mean(
+        as.numeric(
+          c(
+            input$d4_1,
+            input$d4_2,
+            input$d4_3,
+            input$d4_4,
+            input$d4_5,
+            input$d4_6,
+            input$d4_7
+          )
+        ),
+        na.rm = TRUE
+      )
+    })
+
+    d5 <- reactive({
+      mean(
+        as.numeric(
+          c(input$d5_1, input$d5_2, input$d5_3)
+        ),
+        na.rm = TRUE
+      )
+    })
+
+    d_tot <- reactive({
+      mean(
+        as.numeric(c(d1(), d2(), d3(), d4(), d5())),
+        na.rm = TRUE
+      )
+    })
+
     observe({
-      # example: print values
-      print(input$feasibility_score)
-      print(input$technical_score)
+      cat(
+        "dvals",
+        d1(),
+        ", ",
+        d2(),
+        ", ",
+        d3(),
+        ", ",
+        d4(),
+        ", ",
+        d5(),
+        ", ",
+        d_tot(),
+        "\n"
+      )
     })
   })
 }

@@ -1,0 +1,30 @@
+t <- readxl::read_xlsx("data.xlsx")
+
+x <- data.frame(
+  d1_1 = reactive(input$d1_1),
+  d1_2 = reactive(input$d1_2),
+  d1_3 = reactive(input$d1_3),
+  d1_4 = reactive(input$d1_4),
+  d1_5 = reactive(input$d1_5),
+  d2_1 = reactive(input$d2_1),
+  d2_2 = reactive(input$d2_2),
+  d2_3 = reactive(input$d2_3),
+  d3_1 = reactive(input$d3_1),
+  d3_2 = reactive(input$d3_2),
+  d3_3 = reactive(input$d3_3),
+  d3_4 = reactive(input$d3_4),
+  d3_5 = reactive(input$d3_5),
+  d3_6 = reactive(input$d3_6),
+  d3_7 = reactive(input$d3_7),
+  d3_8 = reactive(input$d3_8),
+  d4_1 = reactive(input$d4_1),
+  d4_2 = reactive(input$d4_2),
+  d4_3 = reactive(input$d4_3),
+  d4_4 = reactive(input$d4_4),
+  d4_5 = reactive(input$d4_5),
+  d4_6 = reactive(input$d4_6),
+  d4_7 = reactive(input$d4_7),
+  d5_1 = reactive(input$d5_1),
+  d5_2 = reactive(input$d5_2),
+  d5_3 = reactive(input$d5_3)
+)
