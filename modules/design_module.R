@@ -715,22 +715,32 @@ design_server <- function(id) {
       )
     })
 
-    observe({
-      cat(
-        "dvals",
-        d1(),
-        ", ",
-        d2(),
-        ", ",
-        d3(),
-        ", ",
-        d4(),
-        ", ",
-        d5(),
-        ", ",
-        d_tot(),
-        "\n"
-      )
-    })
+    return(list(
+      d1 = d1,
+      d2 = d2,
+      d3 = d3,
+      d4 = d4,
+      d5 = d5,
+      d_tot = d_tot
+    ))
+
+    # Value box percent change value
+    # output$d1_vb <- renderUI({
+    #   val <- round(d1(), 2)
+    #
+    #   # Set color based on value
+    #   color <- if (val >= 0 && val < 2) {
+    #     "red" # red
+    #   } else if (val >= 2 && val < 4) {
+    #     "yellow" # yellow-orange
+    #   } else if (val >= 4) {
+    #     "green" # green
+    #   } else {
+    #     "secondary" # fallback gray for NA or out of range
+    #   }
+    #
+    #   # HTML to change colors depending on value
+    #   HTML(paste0("<span style='color:", color, "'>", val, "%</span>"))
+    # })
   })
 }

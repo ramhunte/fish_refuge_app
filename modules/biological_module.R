@@ -29,16 +29,17 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "b1_1",
+        inputId = ns("b1_1"),
         label = NULL,
         choices = c(
-          "1 - No hay estimaciones de abundancia. ",
-          "2 - La abundancia es igual a la línea base.",
-          "3 - La abundancia es 5% superior que la línea base.",
-          "4 - La abundancia es 10% superior que la línea base.",
-          "5 - La abundancia es ≥15% superior o mayor a la línea base."
+          "1 - No hay estimaciones de abundancia." = 1,
+          "2 - La abundancia es igual a la línea base." = 2,
+          "3 - La abundancia es 5% superior que la línea base." = 3,
+          "4 - La abundancia es 10% superior que la línea base." = 4,
+          "5 - La abundancia es ≥15% superior o mayor a la línea base." = 5,
+          "NA" = NA
         ),
-        selected = "3 - La abundancia es 5% superior que la línea base.",
+        selected = 3
       ),
       br(),
 
@@ -50,16 +51,17 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "b1_2",
+        inputId = ns("b1_2"),
         label = NULL,
         choices = c(
-          "1 - No hay estimaciones de abundancia.",
-          "2 - La abundancia es igual a la línea base.",
-          "3 - La abundancia es 5% superior que la línea base.",
-          "4 - La abundancia es 10% superior que la línea base.",
-          "5 - La abundancia es ≥15% superior o mayor a la línea base."
+          "1 - No hay estimaciones de abundancia." = 1,
+          "2 - La abundancia es igual a la línea base." = 2,
+          "3 - La abundancia es 5% superior que la línea base." = 3,
+          "4 - La abundancia es 10% superior que la línea base." = 4,
+          "5 - La abundancia es ≥15% superior o mayor a la línea base." = 5,
+          "NA" = NA
         ),
-        selected = "3 - La abundancia es 5% superior que la línea base.",
+        selected = 3
       ),
       br(),
 
@@ -70,16 +72,17 @@ biological_ui <- function(id) {
         "La densidad expresa el número de organismos por unidad de área. La densidad nos permite identificar si el número total de organismos ha cambiado a través del tiempo, sin importar sus tallas o pesos."
       ),
       selectInput(
-        inputId = "b1_3",
+        inputId = ns("b1_3"),
         label = NULL,
         choices = c(
-          "1 - No hay estimaciones densidad.",
-          "2 - La densidad es igual a la línea base.",
-          "3 - La densidad es 5% superior que la línea base.",
-          "4 - La densidad es 10% superior que la línea base.",
-          "5 - La densidad es ≥15% superior o mayor a la línea base."
+          "1 - No hay estimaciones densidad." = 1,
+          "2 - La densidad es igual a la línea base." = 2,
+          "3 - La densidad es 5% superior que la línea base." = 3,
+          "4 - La densidad es 10% superior que la línea base." = 4,
+          "5 - La densidad es ≥15% superior o mayor a la línea base." = 5,
+          "NA" = NA
         ),
-        selected = "3 - La densidad es 5% superior que la línea base.",
+        selected = 3
       ),
       br(),
 
@@ -90,16 +93,17 @@ biological_ui <- function(id) {
         "Se refiere a la densidad de especies de alto valor comercial o ecológico que pueden ser indicadoras de éxito."
       ),
       selectInput(
-        inputId = "b1_4",
+        inputId = ns("b1_4"),
         label = NULL,
         choices = c(
-          "1 - No hay estimaciones densidad.",
-          "2 - La densidad es igual a la línea base.",
-          "3 - La densidad es 5% superior que la línea base.",
-          "4 - La densidad es 10% superior que la línea base.",
-          "5 - La densidad es ≥15% superior o mayor a la línea base."
+          "1 - No hay estimaciones densidad." = 1,
+          "2 - La densidad es igual a la línea base." = 2,
+          "3 - La densidad es 5% superior que la línea base." = 3,
+          "4 - La densidad es 10% superior que la línea base." = 4,
+          "5 - La densidad es ≥15% superior o mayor a la línea base." = 5,
+          "NA" = NA
         ),
-        selected = "3 - La densidad es 5% superior que la línea base.",
+        selected = 3
       ),
       br(),
 
@@ -111,16 +115,17 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "b1_5",
+        inputId = ns("b1_5"),
         label = NULL,
         choices = c(
-          "1 - No hay estimaciones de biomasa.",
-          "2 - La biomasa es igual a la línea base.",
-          "3 - La biomasa es 5% superior que la línea base.",
-          "4 - La biomasa es 10% superior que la línea base.",
-          "5 - La biomasa es ≥15% superior o mayor a la línea base."
+          "1 - No hay estimaciones de biomasa." = 1,
+          "2 - La biomasa es igual a la línea base." = 2,
+          "3 - La biomasa es 5% superior que la línea base." = 3,
+          "4 - La biomasa es 10% superior que la línea base." = 4,
+          "5 - La biomasa es ≥15% superior o mayor a la línea base." = 5,
+          "NA" = NA
         ),
-        selected = "3 - La biomasa es 5% superior que la línea base.",
+        selected = 3
       ),
       br(),
 
@@ -132,16 +137,17 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "b1_6",
+        inputId = ns("b1_6"),
         label = NULL,
         choices = c(
-          "1 - No hay estimaciones de biomasa.",
-          "2 - La biomasa es igual a la línea base.",
-          "3 - La biomasa es 5% superior que la línea base.",
-          "4 - La biomasa es 10% superior que la línea base.",
-          "5 - La biomasa es ≥15% superior o mayor a la línea base."
+          "1 - No hay estimaciones de biomasa." = 1,
+          "2 - La biomasa es igual a la línea base." = 2,
+          "3 - La biomasa es 5% superior que la línea base." = 3,
+          "4 - La biomasa es 10% superior que la línea base." = 4,
+          "5 - La biomasa es ≥15% superior o mayor a la línea base." = 5,
+          "NA" = NA
         ),
-        selected = "3 - La biomasa es 5% superior que la línea base.",
+        selected = 3,
       ),
       br(),
 
@@ -153,16 +159,17 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "b1_7",
+        inputId = ns("b1_7"),
         label = NULL,
         choices = c(
-          "1 - No hay estimaciones del índice de Shannon.",
-          "2 - El índice de Shannon es menor a 2.",
-          "3 - El índice de Shannon esta entre 2.1 y 2.4.",
-          "4 - El índice de Shannon esta entre 2.5 y 3.",
-          "5 - El índice de Shannon es mayor a 3."
+          "1 - No hay estimaciones del índice de Shannon." = 1,
+          "2 - El índice de Shannon es menor a 2." = 2,
+          "3 - El índice de Shannon esta entre 2.1 y 2.4." = 3,
+          "4 - El índice de Shannon esta entre 2.5 y 3." = 4,
+          "5 - El índice de Shannon es mayor a 3." = 5,
+          "NA" = NA
         ),
-        selected = "3 - El índice de Shannon esta entre 2.1 y 2.4.",
+        selected = 3
       ),
       br(),
 
@@ -174,16 +181,17 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "b1_8",
+        inputId = ns("b1_8"),
         label = NULL,
         choices = c(
-          "1 - No hay estimaciones de la  riqueza.",
-          "2 - ",
-          "3 - La riqueza es igual a la línea base.",
-          "4 - ",
-          "5 - La riqueza es superior a la línea base."
+          "1 - No hay estimaciones de la  riqueza." = 1,
+          "2 - " = 2,
+          "3 - La riqueza es igual a la línea base." = 3,
+          "4 - " = 4,
+          "5 - La riqueza es superior a la línea base." = 5,
+          "NA" = NA
         ),
-        selected = "3 - La riqueza es igual a la línea base.",
+        selected = 3
       ),
       br(),
 
@@ -195,16 +203,16 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "b1_9",
+        inputId = ns("b1_9"),
         label = NULL,
         choices = c(
-          "1 - No hay estimaciones de la  riqueza.",
-          "2 - ",
-          "3 - La riqueza es igual a la línea base.",
-          "4 - ",
-          "5 - La riqueza es superior a la línea base."
+          "1 - No hay estimaciones de la  riqueza." = 1,
+          "2 - " = 2,
+          "3 - La riqueza es igual a la línea base." = 3,
+          "4 - " = 4,
+          "5 - La riqueza es superior a la línea base." = 5
         ),
-        selected = "3 - La riqueza es igual a la línea base.",
+        selected = 3
       ),
       br(),
 
@@ -216,16 +224,17 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "b1_10",
+        inputId = ns("b1_10"),
         label = NULL,
         choices = c(
-          "1 - No hay estimaciones de la estructura de tallas.",
-          "2 - La talla de organismos es igual a la línea base.",
-          "3 - Se registran tallas mayores a la línea base entre el 10-30% de los organismos.",
-          "4 - Se registran tallas mayores a la línea base entre el 30-50% de los organismos.",
-          "5 - Se registran tallas mayores a la línea base en ≥50% de los organismos."
+          "1 - No hay estimaciones de la estructura de tallas." = 1,
+          "2 - La talla de organismos es igual a la línea base." = 2,
+          "3 - Se registran tallas mayores a la línea base entre el 10-30% de los organismos." = 3,
+          "4 - Se registran tallas mayores a la línea base entre el 30-50% de los organismos." = 4,
+          "5 - Se registran tallas mayores a la línea base en ≥50% de los organismos." = 5,
+          "NA" = NA
         ),
-        selected = "3 - Se registran tallas mayores a la línea base entre el 10-30% de los organismos.",
+        selected = 3
       ),
       br(),
 
@@ -237,16 +246,17 @@ biological_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "b1_11",
+        inputId = ns("b1_11"),
         label = NULL,
         choices = c(
-          "1 - No hay estimaciones de la estructura de tallas.",
-          "2 - La talla de peces es igual a la línea base.",
-          "3 - Se registran tallas mayores a la línea base en el 10-20% de los organismos.",
-          "4 - Se registran tallas mayores a la línea base en el 30-40% o más de los organismos.",
-          "5 - Se registran tallas mayores a la línea base en el 50% o más de los organismos."
+          "1 - No hay estimaciones de la estructura de tallas." = 1,
+          "2 - La talla de peces es igual a la línea base." = 2,
+          "3 - Se registran tallas mayores a la línea base en el 10-20% de los organismos." = 3,
+          "4 - Se registran tallas mayores a la línea base en el 30-40% o más de los organismos." = 4,
+          "5 - Se registran tallas mayores a la línea base en el 50% o más de los organismos." = 5,
+          "NA" = NA
         ),
-        selected = "3 - Se registran tallas mayores a la línea base en el 10-20% de los organismos.",
+        selected = 3
       )
     ),
     br()
@@ -259,5 +269,29 @@ biological_ui <- function(id) {
 
 biological_server <- function(id) {
   moduleServer(id, function(input, output, session) {
+    b1 <- reactive({
+      mean(
+        as.numeric(
+          c(
+            input$b1_1,
+            input$b1_2,
+            input$b1_3,
+            input$b1_4,
+            input$b1_5,
+            input$b1_6,
+            input$b1_7,
+            input$b1_8,
+            input$b1_9,
+            input$b1_10,
+            input$b1_11
+          )
+        ),
+        na.rm = TRUE
+      )
+    })
+
+    return(list(
+      b1 = b1
+    ))
   })
 }

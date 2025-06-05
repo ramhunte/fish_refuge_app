@@ -29,16 +29,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "1.1",
+        inputId = ns("g1_1"),
         label = NULL,
         choices = c(
-          "1 - No se ha realizado ningún monitoreo.",
-          "2 - Se ha realizado monitoreo una sola vez en periodo evaluado.",
-          "3 - Se realizó monitoreo el 50% del periodo evaluado.",
-          "4 - Se realizó monitoreo el 75% del periodo evaluado.",
-          "5 - Se realizó monitoreo el 100% del periodo evaluado."
+          "1 - No se ha realizado ningún monitoreo." = 1,
+          "2 - Se ha realizado monitoreo una sola vez en periodo evaluado." = 2,
+          "3 - Se realizó monitoreo el 50% del periodo evaluado." = 3,
+          "4 - Se realizó monitoreo el 75% del periodo evaluado." = 4,
+          "5 - Se realizó monitoreo el 100% del periodo evaluado." = 5,
+          "NA" = NA
         ),
-        selected = "3 - Se realizó monitoreo el 50% del periodo evaluado."
+        selected = 3
       ),
       br(),
 
@@ -50,16 +51,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "1.1",
+        inputId = ns("g1_2"),
         label = NULL,
         choices = c(
-          "1 - No se ha realizado ningún monitoreo.",
-          "2 - Se ha realizado monitoreo una sola vez.",
-          "3 - Se realizó monitoreo el 50% del periodo evaluado.",
-          "4 - Se realizó monitoreo el 75% del periodo evaluado.",
-          "5 - Se realizó monitoreo el 100% del periodo evaluado."
+          "1 - No se ha realizado ningún monitoreo." = 1,
+          "2 - Se ha realizado monitoreo una sola vez." = 2,
+          "3 - Se realizó monitoreo el 50% del periodo evaluado." = 3,
+          "4 - Se realizó monitoreo el 75% del periodo evaluado." = 4,
+          "5 - Se realizó monitoreo el 100% del periodo evaluado." = 5,
+          "NA" = NA
         ),
-        selected = "3 - Se realizó monitoreo el 50% del periodo evaluado."
+        selected = 3
       ),
 
       br(),
@@ -72,16 +74,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "1.3",
+        inputId = ns("g1_3"),
         label = NULL,
         choices = c(
-          "1 - No se cuenta con una base de datos digital.",
-          "2 - Base de datos incompleta y/o sin revisión.",
-          "3 - Base de datos revisada y lista para analizar.",
-          "4 - Análisis de datos completo. Información interpretada.",
-          "5 - Se cuenta con un reporte tecnico de resultados"
+          "1 - No se cuenta con una base de datos digital." = 1,
+          "2 - Base de datos incompleta y/o sin revisión." = 2,
+          "3 - Base de datos revisada y lista para analizar." = 3,
+          "4 - Análisis de datos completo. Información interpretada." = 4,
+          "5 - Se cuenta con un reporte tecnico de resultados" = 5,
+          "NA" = NA
         ),
-        selected = "3 - Base de datos revisada y lista para analizar."
+        selected = 3
       )
     ),
 
@@ -111,16 +114,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "2.1",
+        inputId = ns("g2_1"),
         label = NULL,
         choices = c(
-          "1 - No se ha organizado un comité.",
-          "2 - El comité esta en proceso de conformación.",
-          "3 - Existe un comité pero no opera de manera eficiente.",
-          "4 - ",
-          "5 - El comité maneja la adecuadamente la herramienta de manejo."
+          "1 - No se ha organizado un comité." = 1,
+          "2 - El comité esta en proceso de conformación." = 2,
+          "3 - Existe un comité pero no opera de manera eficiente." = 3,
+          "4 - " = 4,
+          "5 - El comité maneja la adecuadamente la herramienta de manejo." = 5,
+          "NA" = NA
         ),
-        selected = "3 - Existe un comité pero no opera de manera eficiente.",
+        selected = 3
       ),
       br(),
 
@@ -132,16 +136,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "2.2",
+        inputId = ns("g2_2"),
         label = NULL,
         choices = c(
-          "1 - No hay mujeres en el comité.",
-          "2 - El 10% de los integrantes del comité son mujeres.",
-          "3 - El 30% de los integrantes del comité son mujeres.",
-          "4 - El 40% de los integrantes del comité son mujeres.",
-          "5 - Al menos el 50% de los integrantes del comité son mujeres."
+          "1 - No hay mujeres en el comité." = 1,
+          "2 - El 10% de los integrantes del comité son mujeres." = 2,
+          "3 - El 30% de los integrantes del comité son mujeres." = 3,
+          "4 - El 40% de los integrantes del comité son mujeres." = 4,
+          "5 - Al menos el 50% de los integrantes del comité son mujeres." = 5,
+          "NA" = NA
         ),
-        selected = "3 - El 30% de los integrantes del comité son mujeres.",
+        selected = 3
       ),
       br(),
 
@@ -153,16 +158,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "2.3",
+        inputId = ns("g2_3"),
         label = NULL,
         choices = c(
-          "1 - No hay juventudes en el comité.",
-          "2 - El 10% de los integrantes del comité son juventudes.",
-          "3 - El 20% de los integrantes del comité son juventudes.",
-          "4 - ",
-          "5 - El menos el 30% o mas de los integrantes del comité son juventudes."
+          "1 - No hay juventudes en el comité." = 1,
+          "2 - El 10% de los integrantes del comité son juventudes." = 2,
+          "3 - El 20% de los integrantes del comité son juventudes." = 3,
+          "4 - " = 4,
+          "5 - El menos el 30% o mas de los integrantes del comité son juventudes." = 5,
+          "NA" = NA
         ),
-        selected = "3 - El 20% de los integrantes del comité son juventudes.",
+        selected = 3,
       ),
       br(),
 
@@ -174,16 +180,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "2.4",
+        inputId = ns("g2_4"),
         label = NULL,
         choices = c(
-          "1 - No hay un programa de vigilancia comunitaria.",
-          "2 - Se han realizado capacitaciones en vigilancia comunitaria.",
-          "3 - Existe un grupo de vigilancia comunitaria y cuenta con recursos para la vigilancia.",
-          "4 - Se realiza vigilancia de manera constante.",
-          "5 - Al menos el 50% de los integrantes del comité son mujeres."
+          "1 - No hay un programa de vigilancia comunitaria." = 1,
+          "2 - Se han realizado capacitaciones en vigilancia comunitaria." = 2,
+          "3 - Existe un grupo de vigilancia comunitaria y cuenta con recursos para la vigilancia." = 3,
+          "4 - Se realiza vigilancia de manera constante." = 4,
+          "5 - Al menos el 50% de los integrantes del comité son mujeres." = 5,
+          "NA" = NA
         ),
-        selected = "3 - Existe un grupo de vigilancia comunitaria y cuenta con recursos para la vigilancia.",
+        selected = 3
       ),
       br(),
 
@@ -195,16 +202,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "2.5",
+        inputId = ns("g2_5"),
         label = NULL,
         choices = c(
-          "1 - No se respeta la herramienta de manejo.",
-          "2 - ",
-          "3 - ",
-          "4 - Existe un programa para mantener el orden de la herramienta de manejo.",
-          "5 - Se respeta la herramienta de manejo."
+          "1 - No se respeta la herramienta de manejo." = 1,
+          "2 - " = 2,
+          "3 - " = 3,
+          "4 - Existe un programa para mantener el orden de la herramienta de manejo." = 4,
+          "5 - Se respeta la herramienta de manejo." = 5,
+          "NA" = NA
         ),
-        selected = "3 - ",
+        selected = 3
       ),
       br(),
 
@@ -218,16 +226,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "2.6",
+        inputId = ns("g2_6"),
         label = NULL,
         choices = c(
-          "1 - No existen sanciones.",
-          "2 - Existen sanciones pero no se aplican.",
-          "3 - Se hace vigilancia pero no se elaboran denuncias.",
-          "4 - Se reportan denuncias de actividades ilícitas, pero no se conoce si se aplican sanciones.",
-          "5 - Se aplican sanciones cuando es necesario."
+          "1 - No existen sanciones." = 1,
+          "2 - Existen sanciones pero no se aplican." = 2,
+          "3 - Se hace vigilancia pero no se elaboran denuncias." = 3,
+          "4 - Se reportan denuncias de actividades ilícitas, pero no se conoce si se aplican sanciones." = 4,
+          "5 - Se aplican sanciones cuando es necesario." = 5,
+          "NA" = NA
         ),
-        "3 - Se hace vigilancia pero no se elaboran denuncias.",
+        selected = 3,
       ),
       br(),
 
@@ -241,16 +250,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "2.7",
+        inputId = ns("g2_7"),
         label = NULL,
         choices = c(
-          "1 - ",
-          "2 - No existen alianzas para el manejo.",
-          "3 - Se están construyendo alianzas para el manejo.",
-          "4 - Se ha colorado con al menos un aliado para el manejo de la herramienta de manejo.",
-          "5 - Se mantienen alianzas de colaboración para el manejo."
+          "1 - " = 1,
+          "2 - No existen alianzas para el manejo." = 2,
+          "3 - Se están construyendo alianzas para el manejo." = 3,
+          "4 - Se ha colorado con al menos un aliado para el manejo de la herramienta de manejo." = 4,
+          "5 - Se mantienen alianzas de colaboración para el manejo." = 5,
+          "NA" = NA
         ),
-        "3 - Se están construyendo alianzas para el manejo.",
+        selected = 3,
       ),
       br(),
 
@@ -264,16 +274,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "2.8",
+        inputId = ns("g2_8"),
         label = NULL,
         choices = c(
-          "1 - Los administradores no han compartido logros y conocimiento",
-          "2 - ",
-          "3 - Los administradores comparten sus logros",
-          "4 - ",
-          "5 - Los administradores Transfieren conocimiento para escalar la solución"
+          "1 - Los administradores no han compartido logros y conocimiento" = 1,
+          "2 - " = 2,
+          "3 - Los administradores comparten sus logros" = 3,
+          "4 - " = 4,
+          "5 - Los administradores Transfieren conocimiento para escalar la solución" = 5,
+          "NA" = NA
         ),
-        "3 - Los administradores comparten sus logros",
+        selected = 3
       ),
     ),
     br(),
@@ -302,16 +313,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "3.1",
+        inputId = ns("g3_1"),
         label = NULL,
         choices = c(
-          "1 - No hay un costeo operativo.",
-          "2 - Se ha costeado el 30% de las actividades.",
-          "3 - Se ha costeado el 50% de las actividades.",
-          "4 - Se ha costeado el  80% de las actividades.",
-          "5 - Se cuenta con costeo de 100% las actividades."
+          "1 - No hay un costeo operativo." = 1,
+          "2 - Se ha costeado el 30% de las actividades." = 2,
+          "3 - Se ha costeado el 50% de las actividades." = 3,
+          "4 - Se ha costeado el  80% de las actividades." = 4,
+          "5 - Se cuenta con costeo de 100% las actividades." = 5,
+          "NA" = NA
         ),
-        selected = "3 - Se ha costeado el 50% de las actividades.",
+        selected = 3
       ),
       br(),
 
@@ -323,16 +335,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "3.2",
+        inputId = ns("g3_2"),
         label = NULL,
         choices = c(
-          "1 - No hay propuestas de recaudación.",
-          "2 - Se ha sometido al menos una propuesta de financiamiento pero no han sido aprobadas.",
-          "3 - Se recaudó de recurso privado  el 10% de la operación anual.",
-          "4 - Se cuenta con recursos para cubrir el 30% de la operación anual.",
-          "5 - Se cuenta con recursos para cubrir el 60% de la operación anual."
+          "1 - No hay propuestas de recaudación." = 1,
+          "2 - Se ha sometido al menos una propuesta de financiamiento pero no han sido aprobadas." = 2,
+          "3 - Se recaudó de recurso privado  el 10% de la operación anual." = 3,
+          "4 - Se cuenta con recursos para cubrir el 30% de la operación anual." = 4,
+          "5 - Se cuenta con recursos para cubrir el 60% de la operación anual." = 5,
+          "NA" = NA
         ),
-        selected = "3 - Se recaudó de recurso privado  el 10% de la operación anual.",
+        selected = 3
       ),
       br(),
 
@@ -344,16 +357,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "3.3",
+        inputId = ns("g3_3"),
         label = NULL,
         choices = c(
-          "1 - No hay propuestas de recaudación.",
-          "2 - Se ha sometido al menos una propuesta de financiamiento pero no han sido aprobadas.",
-          "3 - Se recaudó de recursos del gobierno el 10% de la operación anual.",
-          "4 - Se recaudó de recursos del gobierno el 30% de la operación anual.",
-          "5 - Se recaudó de recursos del gobierno el 50% de la operación anual."
+          "1 - No hay propuestas de recaudación." = 1,
+          "2 - Se ha sometido al menos una propuesta de financiamiento pero no han sido aprobadas." = 2,
+          "3 - Se recaudó de recursos del gobierno el 10% de la operación anual." = 3,
+          "4 - Se recaudó de recursos del gobierno el 30% de la operación anual." = 4,
+          "5 - Se recaudó de recursos del gobierno el 50% de la operación anual." = 5,
+          "NA" = NA
         ),
-        selected = "3 - Se recaudó de recursos del gobierno el 10% de la operación anual.",
+        selected = 3
       ),
       br(),
 
@@ -367,16 +381,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "3.4",
+        inputId = ns("g3_4"),
         label = NULL,
         choices = c(
-          "1 - ",
-          "2 - Se percibe el incremento de capturas.",
-          "3 - Se hace un programa para registrar incremento de capturas.",
-          "4 - ",
-          "5 - Se ha registrado incremento de capturas."
+          "1 - " = 1,
+          "2 - Se percibe el incremento de capturas." = 2,
+          "3 - Se hace un programa para registrar incremento de capturas." = 3,
+          "4 - " = 4,
+          "5 - Se ha registrado incremento de capturas." = 5,
+          "NA" = NA
         ),
-        selected = "3 - Se hace un programa para registrar incremento de capturas.",
+        selected = 3
       ),
       br(),
 
@@ -388,16 +403,17 @@ governance_ui <- function(id) {
       ),
 
       selectInput(
-        inputId = "3.5",
+        inputId = ns("g3_5"),
         label = NULL,
         choices = c(
-          "1 - No se monitorea el efecto de la reserva marina en el precio de mercado del producto, o su reconocimiento, etc.",
-          "2 - ",
-          "3 - Se da a conocer al mercado el manejo de reserva marina, pero no se tiene ningún beneficio.",
-          "4 - ",
-          "5 - Se tiene al menos un benéfico con el mercado."
+          "1 - No se monitorea el efecto de la reserva marina en el precio de mercado del producto, o su reconocimiento, etc." = 1,
+          "2 - " = 2,
+          "3 - Se da a conocer al mercado el manejo de reserva marina, pero no se tiene ningún beneficio." = 3,
+          "4 - " = 4,
+          "5 - Se tiene al menos un benéfico con el mercado." = 5,
+          "NA" = NA
         ),
-        selected = "3 - Se da a conocer al mercado el manejo de reserva marina, pero no se tiene ningún beneficio.",
+        selected = 3
       ),
       br(),
 
@@ -408,19 +424,20 @@ governance_ui <- function(id) {
         "Nivel de oportunidades económicas que se generan después de la implementación de la herramienta de manejo. Las oportunidades económicas alternativas pueden ser directamente de actividades pesqueras u otras actividades como turismo, empleos temporales para actividades de vigilancia o ciencia ciudadana, pero que estas sean remuneradas."
       ),
       selectInput(
-        inputId = "3.6",
+        inputId = ns("g3_6"),
         label = NULL,
         choices = c(
-          "1 - No se tienen actividades alternativas a la pesca.",
-          "2 - Se ha planificado la ejecución de actividades alternativas.",
-          "3 - Se implementan actividades alternativas piloto.",
-          "4 - ",
-          "5 - Se da continuidad a actividades alternativas."
+          "1 - No se tienen actividades alternativas a la pesca." = 1,
+          "2 - Se ha planificado la ejecución de actividades alternativas." = 2,
+          "3 - Se implementan actividades alternativas piloto." = 3,
+          "4 - " = 4,
+          "5 - Se da continuidad a actividades alternativas." = 5,
+          "NA" = NA
         ),
-        selected = "3 - Se implementan actividades alternativas piloto.",
+        selected = 3
       )
     ),
-    br(),
+    br()
   )
 }
 
@@ -431,5 +448,72 @@ governance_ui <- function(id) {
 
 governance_server <- function(id) {
   moduleServer(id, function(input, output, session) {
+    g1 <- reactive({
+      mean(
+        as.numeric(
+          c(
+            input$g1_1,
+            input$g1_2,
+            input$g1_3
+          )
+        ),
+        na.rm = TRUE
+      )
+    })
+
+    g2 <- reactive({
+      mean(
+        as.numeric(
+          c(
+            input$g2_1,
+            input$g2_2,
+            input$g2_3,
+            input$g2_4,
+            input$g2_5,
+            input$g2_6,
+            input$g2_7,
+            input$g2_8
+          )
+        ),
+        na.rm = TRUE
+      )
+    })
+
+    g3 <- reactive({
+      mean(
+        as.numeric(
+          c(
+            input$g3_1,
+            input$g3_2,
+            input$g3_3,
+            input$g3_4,
+            input$g3_5,
+            input$g3_6
+          )
+        ),
+        na.rm = TRUE
+      )
+    })
+
+    g_tot <- reactive({
+      mean(
+        as.numeric(c(g1(), g2(), g3())),
+        na.rm = TRUE
+      )
+    })
+
+    observe({
+      cat(
+        "gvals",
+        g1(),
+        ", ",
+        g2(),
+        ", ",
+        g3(),
+        ", ",
+        g_tot(),
+        "\n"
+      )
+    })
   })
 }

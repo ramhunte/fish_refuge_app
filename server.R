@@ -1,17 +1,20 @@
 server <- function(input, output, session) {
   ###################### module servers #######################
   # home_server("home")
-  design_server("design")
+  # design_server("design")
   governance_server("governance")
   biological_server("biological")
-  summary_server("summary")
+
+  design_vals <- design_server("design")
+
+  summary_server("summary", d_vals = design_vals)
 
   # data table render
   output$table <- renderDataTable(data)
 
   ###########################################################
 
-  ###################### tab uodates #######################
+  ###################### tab updates #######################
 
   observeEvent(input$next_home, {
     updateTabsetPanel(session, "evaluate_tabs", selected = "Design")

@@ -28,13 +28,11 @@ ui <-
           # nav_panel Home
           nav_panel(
             "Home",
-
-            br(),
-            br(),
-
-            h3("About the Marine Reserves"),
-
-            card(title = "Data", height = "550px", dataTableOutput('table')),
+            fluidRow(
+              column(1),
+              column(10, home_ui("home")),
+              column(1)
+            ),
 
             fluidRow(
               column(12, align = "right", next_btn("next_home"))
