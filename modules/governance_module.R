@@ -502,18 +502,18 @@ governance_server <- function(id) {
       )
     })
 
-    observe({
-      cat(
-        "gvals",
-        g1(),
-        ", ",
-        g2(),
-        ", ",
-        g3(),
-        ", ",
-        g_tot(),
-        "\n"
-      )
-    })
+    return(list(
+      g1 = g1,
+      g2 = g2,
+      g3 = g3,
+      g_tot = g_tot
+
+      #   observe({
+      #     cat("g1 =", g1(), "\n")
+      #     cat("g2 =", g2(), "\n")
+      #     cat("g3 =", g3(), "\n")
+      #     cat("g_tot =", g_tot(), "\n\n")
+      #   })
+    ))
   })
 }

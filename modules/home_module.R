@@ -30,7 +30,7 @@ home_ui <- function(id) {
           value = ""
         ),
         br(),
-        textInput(ns("estdaoInput"), label = h4("3. Estado"), value = ""),
+        textInput(ns("estadoInput"), label = h4("3. Estado"), value = ""),
         br(),
         textInput(ns("rmInput"), label = h4("4. Reserva Marina"), value = ""),
         br(),
@@ -47,8 +47,37 @@ home_ui <- function(id) {
 
 home_server <- function(id) {
   moduleServer(id, function(input, output, session) {
-    # output[[session$ns("sites")]] <- renderDataTable({
-    #   data # Replace this with your actual data
-    # })
+    # promovente text
+    promovente <- reactive({
+      input$promoventeInput
+    })
+
+    # comunidad text
+    comunidad <- reactive({
+      input$comunidadInput
+    })
+
+    # estado text
+    estado <- reactive({
+      input$estadoInput
+    })
+
+    # rm text
+    rm <- reactive({
+      input$rmInput
+    })
+
+    # cat text
+    cat <- reactive({
+      input$catInput
+    })
+
+    return(list(
+      promovente = promovente,
+      comunidad = comunidad,
+      estado = estado,
+      rm = rm,
+      cat = cat
+    ))
   })
 }

@@ -290,8 +290,16 @@ biological_server <- function(id) {
       )
     })
 
+    b_tot <- reactive({
+      mean(
+        as.numeric(b1()),
+        na.rm = TRUE
+      )
+    })
+
     return(list(
-      b1 = b1
+      b1 = b1,
+      b_tot = b_tot
     ))
   })
 }

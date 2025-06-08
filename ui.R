@@ -17,21 +17,43 @@ ui <-
       theme = bs_theme(bootswatch = "flatly"),
 
       # START nav_panel Overview
-      nav_panel("Overview", h2("Welcome!")), # END nav_panel Overview
+      nav_panel(
+        "Acerca de",
+
+        fluidRow(
+          column(1),
+          column(
+            10,
+
+            br(),
+            br(),
+
+            div(
+              style = "text-align: center;",
+              h2("Bienvenidos")
+            ),
+
+            br(),
+            br(),
+            includeMarkdown("text/About.md")
+          ),
+          column(1)
+        )
+      ),
 
       # START nav_panel Evaluate
       nav_panel(
-        "Evaluate",
+        "Evaluación",
         navset_pill(
           id = "evaluate_tabs", # Add this ID
 
           # nav_panel Home
           nav_panel(
-            "Home",
+            "Detalles de la reserva",
             fluidRow(
-              column(1),
-              column(10, home_ui("home")),
-              column(1)
+              column(2),
+              column(8, home_ui("home")),
+              column(2)
             ),
 
             fluidRow(
@@ -41,7 +63,7 @@ ui <-
 
           # nav_panel Design
           nav_panel(
-            "Design",
+            "Gestión y diseño",
             fluidRow(
               column(1),
               column(10, design_ui("design")),
@@ -56,7 +78,7 @@ ui <-
 
           # nav_panel Governance
           nav_panel(
-            "Governance",
+            "Gobernanza",
             fluidRow(
               column(1),
               column(10, governance_ui("governance")),
@@ -71,7 +93,7 @@ ui <-
 
           # nav_panel Biological
           nav_panel(
-            "Biological",
+            "Biológica",
             fluidRow(
               column(1),
               column(10, biological_ui("biological")),
@@ -85,7 +107,7 @@ ui <-
 
           # nav_panel Summary
           nav_panel(
-            "Summary",
+            "Resumen",
             fluidRow(
               column(1),
               column(10, summary_ui("summary")),
