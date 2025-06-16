@@ -6,6 +6,7 @@ library(bslib)
 library(bsicons)
 
 source("R/utils.R")
+source("R/header.R")
 # sourcing modules
 source("modules/home_module.R")
 source("modules/design_module.R")

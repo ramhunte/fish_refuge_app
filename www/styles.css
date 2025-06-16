@@ -1,1 +1,5 @@
-custom_card
+/* fmt: skip file */
+
+.selectize-control{
+  width:600px !important
+}

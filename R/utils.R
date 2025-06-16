@@ -37,7 +37,7 @@ next_btn <- function(id) {
   actionButton(
     inputId = id,
     label = tagList(
-      "Next",
+      "Próxima",
       span(style = "margin-left: 9px;", icon("arrow-right"))
     ),
     width = 130,
@@ -50,7 +50,10 @@ back_btn <- function(id) {
     inputId = id,
     label = tagList(
       icon("arrow-left"),
-      span(style = "margin-left: 9px;", "Back")
+      span(
+        style = "margin-left: 9px;",
+        "Atrás"
+      )
     ),
     width = 130,
     class = "p-3 m-5"

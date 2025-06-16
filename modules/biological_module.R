@@ -11,7 +11,7 @@ biological_ui <- function(id) {
     ############################## 1 Biological ##############################
     div(
       style = "text-align: center;",
-      h2("Fase #1: Biological"),
+      h2("Fase #1: Biológica"),
       p(
         "Consiste en documentar cambios según acciones puntuales de implementación como levantamiento de información biológico y el análisis de los mismos. Esto con el objeto de hacer notar los cambios dentro y fuera de la herramienta de manejo."
       ),

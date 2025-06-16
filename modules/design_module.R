@@ -11,7 +11,7 @@ design_ui <- function(id) {
     ############################## 1 ##############################
     div(
       style = "text-align: center;",
-      h2("Fase #1: Feasibility"),
+      h2("Fase #1: Factibilidad"),
       p(
         "Consiste en realizar una investigación de campo y bibliográfica para tener detalle sobre el contexto ambiental, social, económico y de gobernanza, para determinar si establecer una red o una herramienta de manejo es factible y se alinea con las necesidades locales."
       )
@@ -129,7 +129,7 @@ design_ui <- function(id) {
 
     div(
       style = "text-align: center;",
-      h2("Fase #2: Socialization"),
+      h2("Fase #2: Socialización"),
       p(
         " Consiste en realizar reuniones para difundir la iniciativa y sumar esfuerzos."
       )
@@ -206,7 +206,7 @@ design_ui <- function(id) {
 
     div(
       style = "text-align: center;",
-      h2("Fase #3: Design"),
+      h2("Fase #3: Diseño"),
       p(
         "Este proceso involucra la socialización con participantes primarios para determinar:  la forma, tamaño, localización, modalidad, el tipo de protección, objetivos de la herramienta de manejo, especies objetivo, temporalidad, indicadores de evaluación. Las acciones, costos, responsabilidades y tiempos de cumplimiento. Así como el proceso para solicitar la herramienta de manejo. (Actores primarios se refiere a aquellos grupos de personas que toman decisiones respecto al diseño y establecimiento del herramienta de manejo)."
       )
@@ -389,7 +389,7 @@ design_ui <- function(id) {
 
     div(
       style = "text-align: center;",
-      h2("Fase #4: Management"),
+      h2("Fase #4: Gestión"),
       p(
         "Se enfoca en el manejo de la herramienta de manejo durante su vigencia y documenta los cambios."
       )
@@ -556,7 +556,7 @@ design_ui <- function(id) {
 
     div(
       style = "text-align: center;",
-      h2("Fase #5: Permanence"),
+      h2("Fase #5: Permanencia"),
       p(
         "Con los resultados obtenidos, se hace una evaluación general del funcionamiento de la herramienta de manejo y se determina su continuidad. Si es necesario, se realizan las adecuaciones para aumentar los logros."
       )

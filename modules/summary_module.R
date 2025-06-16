@@ -7,6 +7,149 @@ summary_ui <- function(id) {
     br(),
     br(),
 
+    bslib::layout_columns(
+      col_widths = c(4, 4, 4), # 3 equal-width columns
+
+      ############################# Design #################################
+      # Card 1
+      div(
+        div(
+          style = "text-align: center;",
+          h1("Gestión y diseño")
+        ),
+
+        bslib::value_box(
+          title = "Puntuación total de gestión y diseño",
+          value = uiOutput(ns("d_tot_vb")),
+          showcase = bs_icon("check-lg"),
+          theme_color = "secondary"
+        ),
+
+        bslib::card(
+          class = "bg-success text-white",
+          # bslib::card_header(
+          #   "Design",
+          #   style = "text-align: center; font-size: 1.5rem; font-weight: bold;"
+          # ),
+          bslib::value_box(
+            title = "Fase #1: Factibilidad",
+            value = uiOutput(ns("d1_vb")),
+            showcase = bs_icon("dash"),
+            theme_color = "secondary"
+          ),
+          bslib::value_box(
+            title = "Fase #2: Socialización",
+            value = uiOutput(ns("d2_vb")),
+            showcase = bs_icon("dash"),
+            theme_color = "secondary"
+          ),
+          bslib::value_box(
+            title = "Fase #3: Diseño",
+            value = uiOutput(ns("d3_vb")),
+            showcase = bs_icon("dash"),
+            theme_color = "secondary"
+          ),
+          bslib::value_box(
+            title = "Fase #4: Gestión",
+            value = uiOutput(ns("d4_vb")),
+            showcase = bs_icon("dash"),
+            theme_color = "secondary"
+          ),
+          bslib::value_box(
+            title = "Fase #5: Permanencia",
+            value = uiOutput(ns("d5_vb")),
+            showcase = bs_icon("dash"),
+            theme_color = "secondary"
+          )
+        )
+      ),
+
+      ############################# Governance #################################
+      div(
+        div(
+          style = "text-align: center;",
+          h1("Gobernanza")
+        ),
+        bslib::value_box(
+          title = "Puntuación total de gobernanza",
+          value = uiOutput(ns("g_tot_vb")),
+          showcase = bs_icon("check-lg"),
+          theme_color = "secondary"
+        ),
+
+        bslib::card(
+          class = "bg-success text-white",
+          # bslib::card_header(
+          #   "Design",
+          #   style = "text-align: center; font-size: 1.5rem; font-weight: bold;"
+          # ),
+          bslib::value_box(
+            title = "Fase #1: Gestión de datos",
+            value = uiOutput(ns("g1_vb")),
+            showcase = bs_icon("dash"),
+            theme_color = "secondary"
+          ),
+          bslib::value_box(
+            title = "Fase #2: Toma de decisiones",
+            value = uiOutput(ns("g2_vb")),
+            showcase = bs_icon("dash"),
+            theme_color = "secondary"
+          ),
+          bslib::value_box(
+            title = "Fase #3: Socioeconómicos",
+            value = uiOutput(ns("g3_vb")),
+            showcase = bs_icon("dash"),
+            theme_color = "secondary"
+          )
+        )
+      ),
+
+      ############################# Biological #################################
+      div(
+        div(
+          style = "text-align: center;",
+          h1("Biológica")
+        ),
+
+        bslib::value_box(
+          title = "Puntuación biológica total",
+          value = uiOutput(ns("b_tot_vb")),
+          showcase = bs_icon("check-lg"),
+          theme_color = "secondary"
+        ),
+
+        bslib::card(
+          class = "bg-success text-white",
+          # bslib::card_header(
+          #   "Design",
+          #   style = "text-align: center; font-size: 1.5rem; font-weight: bold;"
+          # ),
+          bslib::value_box(
+            title = "Fase #1: Biológica",
+            value = uiOutput(ns("b1_vb")),
+            showcase = bs_icon("dash"),
+            theme_color = "secondary"
+          )
+        )
+      ),
+    ),
+
+    br(),
+    br(),
+
+    # fluidRow(
+    #   column(
+    #     width = 4,
+    #     offset = 4, # 12-column grid: 4 left, 4 middle, 4 right
+    #     value_box(
+    #       title = "puntuación total",
+    #       value = uiOutput(ns("tot_vb")),
+    #       showcase = bs_icon("check-circle-fill"),
+    #       theme_color = "success"
+    #     )
+    #   )
+    # ),
+
     div(style = "font-size: 24px;", textOutput(ns("promoventeOutput"))),
 
     br(),
@@ -26,131 +169,6 @@ summary_ui <- function(id) {
     div(style = "font-size: 24px;", textOutput(ns("catOutput"))),
 
     br(),
-
-    bslib::layout_columns(
-      col_widths = c(4, 4, 4), # 3 equal-width columns
-
-      ############################# Design #################################
-      # Card 1
-      div(
-        div(
-          style = "text-align: center;",
-          h1("Design")
-        ),
-        bslib::card(
-          class = "bg-primary text-white",
-          # bslib::card_header(
-          #   "Design",
-          #   style = "text-align: center; font-size: 1.5rem; font-weight: bold;"
-          # ),
-          bslib::value_box(
-            title = "Fase #1: Feasibility",
-            value = uiOutput(ns("d1_vb")),
-            showcase = icon("check-circle"),
-            theme_color = "secondary"
-          ),
-          bslib::value_box(
-            title = "Fase #2: Socialization",
-            value = uiOutput(ns("d2_vb")),
-            showcase = icon("check-circle"),
-            theme_color = "secondary"
-          ),
-          bslib::value_box(
-            title = "Fase #3: Design",
-            value = uiOutput(ns("d3_vb")),
-            showcase = icon("check-circle"),
-            theme_color = "secondary"
-          ),
-          bslib::value_box(
-            title = "Fase #4: Management",
-            value = uiOutput(ns("d4_vb")),
-            showcase = icon("check-circle"),
-            theme_color = "secondary"
-          ),
-          bslib::value_box(
-            title = "Fase #5: Permanence",
-            value = uiOutput(ns("d5_vb")),
-            showcase = icon("check-circle"),
-            theme_color = "secondary"
-          )
-        ),
-
-        bslib::value_box(
-          title = "Total Design Score",
-          value = uiOutput(ns("d_tot_vb")),
-          showcase = icon("check-circle"),
-          theme_color = "success"
-        )
-      ),
-
-      ############################# Governance #################################
-      div(
-        div(
-          style = "text-align: center;",
-          h1("Governance")
-        ),
-        bslib::card(
-          class = "bg-primary text-white",
-          # bslib::card_header(
-          #   "Design",
-          #   style = "text-align: center; font-size: 1.5rem; font-weight: bold;"
-          # ),
-          bslib::value_box(
-            title = "Fase #1: Data Management",
-            value = uiOutput(ns("g1_vb")),
-            showcase = icon("check-circle"),
-            theme_color = "secondary"
-          ),
-          bslib::value_box(
-            title = "Fase #2: Decision Making",
-            value = uiOutput(ns("g2_vb")),
-            showcase = icon("check-circle"),
-            theme_color = "secondary"
-          ),
-          bslib::value_box(
-            title = "Fase #3: Socioeconomic",
-            value = uiOutput(ns("g3_vb")),
-            showcase = icon("check-circle"),
-            theme_color = "secondary"
-          )
-        ),
-
-        bslib::value_box(
-          title = "Total Design Score",
-          value = uiOutput(ns("g_tot_vb")),
-          showcase = icon("check-circle"),
-          theme_color = "success"
-        )
-      ),
-
-      ############################# Biological #################################
-      div(
-        div(
-          style = "text-align: center;",
-          h1("Biological")
-        ),
-        bslib::card(
-          class = "bg-primary text-white",
-          # bslib::card_header(
-          #   "Design",
-          #   style = "text-align: center; font-size: 1.5rem; font-weight: bold;"
-          # ),
-          bslib::value_box(
-            title = "Fase #1: Biological",
-            value = uiOutput(ns("b1_vb")),
-            showcase = icon("check-circle"),
-            theme_color = "secondary"
-          )
-        ),
-
-        bslib::value_box(
-          title = "Total Biological  Score",
-          value = uiOutput(ns("b_tot_vb")),
-          showcase = icon("check-circle"),
-          theme_color = "success"
-        )
-      ),
-    )
   )
 }
 
@@ -196,5 +214,14 @@ summary_server <- function(id, h_vals, d_vals, g_vals, b_vals) {
     # biological
     output$b1_vb <- val_ui(b_vals$b1)
     output$b_tot_vb <- val_ui(b_vals$b_tot)
+    # total
+    tot_avg <- reactive({
+      mean(
+        c(d_vals$d_tot(), g_vals$g_tot(), b_vals$b_tot()),
+        na.rm = TRUE
+      )
+    })
+
+    output$tot_vb <- val_ui(function() tot_avg())
   })
 }

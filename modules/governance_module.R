@@ -12,7 +12,7 @@ governance_ui <- function(id) {
     ############################## 1 Data Management ##############################
     div(
       style = "text-align: center;",
-      h2("Fase #1: Data Management"),
+      h2("Fase #1: Gestión de datos"),
       p(
         " Consiste en documentar la utilización de protocolos de monitoreo y manejo de bases de datos para el levantamiento y análisis de información."
       )
@@ -97,7 +97,7 @@ governance_ui <- function(id) {
 
     div(
       style = "text-align: center;",
-      h2("Fase #2: Decision Making"),
+      h2("Fase #2: Toma de decisiones"),
       p(
         "Documenta el manejo y organización por parte del grupo que administra la herramienta de manejo."
       )
@@ -296,7 +296,7 @@ governance_ui <- function(id) {
 
     div(
       style = "text-align: center;",
-      h2("Fase #3: Socioeconomic"),
+      h2("Fase #3: Socioeconómicos"),
       p(
         "Socioeconómicos."
       )
