@@ -39,7 +39,7 @@ governance_ui <- function(id) {
           "5 - Se realizó monitoreo el 100% del periodo evaluado." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -61,7 +61,7 @@ governance_ui <- function(id) {
           "5 - Se realizó monitoreo el 100% del periodo evaluado." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
 
       br(),
@@ -84,7 +84,7 @@ governance_ui <- function(id) {
           "5 - Se cuenta con un reporte tecnico de resultados" = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       )
     ),
 
@@ -124,7 +124,7 @@ governance_ui <- function(id) {
           "5 - El comité maneja la adecuadamente la herramienta de manejo." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -146,7 +146,7 @@ governance_ui <- function(id) {
           "5 - Al menos el 50% de los integrantes del comité son mujeres." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -168,7 +168,7 @@ governance_ui <- function(id) {
           "5 - El menos el 30% o mas de los integrantes del comité son juventudes." = 5,
           "NA" = NA
         ),
-        selected = 3,
+        selected = NA,
       ),
       br(),
 
@@ -190,7 +190,7 @@ governance_ui <- function(id) {
           "5 - Al menos el 50% de los integrantes del comité son mujeres." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -212,7 +212,7 @@ governance_ui <- function(id) {
           "5 - Se respeta la herramienta de manejo." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -236,7 +236,7 @@ governance_ui <- function(id) {
           "5 - Se aplican sanciones cuando es necesario." = 5,
           "NA" = NA
         ),
-        selected = 3,
+        selected = NA,
       ),
       br(),
 
@@ -260,7 +260,7 @@ governance_ui <- function(id) {
           "5 - Se mantienen alianzas de colaboración para el manejo." = 5,
           "NA" = NA
         ),
-        selected = 3,
+        selected = NA,
       ),
       br(),
 
@@ -284,7 +284,7 @@ governance_ui <- function(id) {
           "5 - Los administradores Transfieren conocimiento para escalar la solución" = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
     ),
     br(),
@@ -323,7 +323,7 @@ governance_ui <- function(id) {
           "5 - Se cuenta con costeo de 100% las actividades." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -345,7 +345,7 @@ governance_ui <- function(id) {
           "5 - Se cuenta con recursos para cubrir el 60% de la operación anual." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -367,7 +367,7 @@ governance_ui <- function(id) {
           "5 - Se recaudó de recursos del gobierno el 50% de la operación anual." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -391,7 +391,7 @@ governance_ui <- function(id) {
           "5 - Se ha registrado incremento de capturas." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -413,7 +413,7 @@ governance_ui <- function(id) {
           "5 - Se tiene al menos un benéfico con el mercado." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -434,7 +434,7 @@ governance_ui <- function(id) {
           "5 - Se da continuidad a actividades alternativas." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       )
     ),
     br()

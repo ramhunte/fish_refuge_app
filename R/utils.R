@@ -12,7 +12,7 @@ val_ui <- function(reactive_val) {
       } else if (val >= 2 && val < 4) {
         "orange"
       } else if (val >= 4) {
-        "green"
+        "#66FF66"
       } else {
         "gray"
       }

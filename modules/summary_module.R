@@ -169,6 +169,8 @@ summary_ui <- function(id) {
     div(style = "font-size: 24px;", textOutput(ns("catOutput"))),
 
     br(),
+
+    downloadButton(ns("d_desc"), "Descargar descripción")
   )
 }
 
@@ -223,5 +225,20 @@ summary_server <- function(id, h_vals, d_vals, g_vals, b_vals) {
     })
 
     output$tot_vb <- val_ui(function() tot_avg())
+
+    ########################### Download buttons ############################
+
+    # description
+    output$d_desc <- downloadHandler(
+      filename = function() {
+        "descripción.csv"
+      },
+      content = function(file) {
+        file.copy("data/description.csv", file)
+      },
+      contentType = "text/csv"
+    )
+
+    # description
   })
 }

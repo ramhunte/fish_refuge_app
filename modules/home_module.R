@@ -38,7 +38,7 @@ home_ui <- function(id) {
           ns("catInput"),
           label = h4("5. Categoría de reserva"),
           value = ""
-        )
+        ),
       )
     )
   )

@@ -4,6 +4,7 @@ library(dplyr)
 library(DT)
 library(bslib)
 library(bsicons)
+library(janitor)
 
 source("R/utils.R")
 source("R/header.R")
@@ -13,6 +14,23 @@ source("modules/design_module.R")
 source("modules/governance_module.R")
 source("modules/biological_module.R")
 source("modules/summary_module.R")
+
+# data frames
+des_df <- setNames(
+  read.csv("data/design.csv"),
+  sub("^X", "", names(read.csv("data/design.csv")))
+)
+
+
+gov_df <- setNames(
+  read.csv("data/governance.csv"),
+  sub("^X", "", names(read.csv("data/governance.csv")))
+)
+
+bio_df <- setNames(
+  read.csv("data/biological.csv"),
+  sub("^X", "", names(read.csv("data/biological.csv")))
+)
 
 # reading in data
 data <- readxl::read_excel(

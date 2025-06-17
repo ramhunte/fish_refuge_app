@@ -39,7 +39,7 @@ biological_ui <- function(id) {
           "5 - La abundancia es ≥15% superior o mayor a la línea base." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -61,7 +61,7 @@ biological_ui <- function(id) {
           "5 - La abundancia es ≥15% superior o mayor a la línea base." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -82,7 +82,7 @@ biological_ui <- function(id) {
           "5 - La densidad es ≥15% superior o mayor a la línea base." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -103,7 +103,7 @@ biological_ui <- function(id) {
           "5 - La densidad es ≥15% superior o mayor a la línea base." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -125,7 +125,7 @@ biological_ui <- function(id) {
           "5 - La biomasa es ≥15% superior o mayor a la línea base." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -147,7 +147,7 @@ biological_ui <- function(id) {
           "5 - La biomasa es ≥15% superior o mayor a la línea base." = 5,
           "NA" = NA
         ),
-        selected = 3,
+        selected = NA,
       ),
       br(),
 
@@ -169,7 +169,7 @@ biological_ui <- function(id) {
           "5 - El índice de Shannon es mayor a 3." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -191,7 +191,7 @@ biological_ui <- function(id) {
           "5 - La riqueza es superior a la línea base." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -210,9 +210,10 @@ biological_ui <- function(id) {
           "2 - " = 2,
           "3 - La riqueza es igual a la línea base." = 3,
           "4 - " = 4,
-          "5 - La riqueza es superior a la línea base." = 5
+          "5 - La riqueza es superior a la línea base." = 5,
+          "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -234,7 +235,7 @@ biological_ui <- function(id) {
           "5 - Se registran tallas mayores a la línea base en ≥50% de los organismos." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       ),
       br(),
 
@@ -256,7 +257,7 @@ biological_ui <- function(id) {
           "5 - Se registran tallas mayores a la línea base en el 50% o más de los organismos." = 5,
           "NA" = NA
         ),
-        selected = 3
+        selected = NA
       )
     ),
     br()
@@ -295,6 +296,10 @@ biological_server <- function(id) {
         as.numeric(b1()),
         na.rm = TRUE
       )
+    })
+
+    # data frame
+    df <- reactive({
     })
 
     return(list(

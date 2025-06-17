@@ -37,7 +37,7 @@ design_ui <- function(id) {
           "5 - Se cuenta con un documento en el que se ha identificado la problemática y resultados esperados." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -57,7 +57,7 @@ design_ui <- function(id) {
           "5 - Los participantes primarios cumplen con su rol en el proceso." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -79,7 +79,7 @@ design_ui <- function(id) {
           "5 - Se ha elaborado un documento de caracterización y compatibilidad." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -98,7 +98,7 @@ design_ui <- function(id) {
           "5 - Se cuenta con una opinión de viabilidad del proyecto." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
 
       h3("1.5 Plan de acción."),
@@ -116,7 +116,7 @@ design_ui <- function(id) {
           "5 - Se cuenta con plan de acción y costos de actividades." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       )
     ),
     br(),
@@ -154,7 +154,7 @@ design_ui <- function(id) {
           "5 - Los lideres apoyan la iniciativa." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -174,7 +174,7 @@ design_ui <- function(id) {
           "5 - La mayoría de los sectores están a favor." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -194,7 +194,7 @@ design_ui <- function(id) {
           "5 - Se ha difundido la información en los  medios locales de mayor impacto." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       )
     ),
     br(),
@@ -231,7 +231,7 @@ design_ui <- function(id) {
           "5 - Se ha prestando la información a la mayoría de los participantes clave." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -253,7 +253,7 @@ design_ui <- function(id) {
           "5 - Se han realizado talleres con 100% de sectores participantes." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -273,7 +273,7 @@ design_ui <- function(id) {
           "5 - Se cuenta con un diseño considerando principios." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -293,7 +293,7 @@ design_ui <- function(id) {
           "5 - Se han realizado talleres con la mayoría de participantes identificados." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -315,7 +315,7 @@ design_ui <- function(id) {
           "5 - Los participantes secundarios dan el visto bueno al diseño." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -337,7 +337,7 @@ design_ui <- function(id) {
           "5 - El documento ha sido validado por los participantes primarios con su consentimiento." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -357,7 +357,7 @@ design_ui <- function(id) {
           "5 - Acuse de recibido de solicitud." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -377,7 +377,7 @@ design_ui <- function(id) {
           "5 - Se cuenta con decreto o acuerdo comunitario del establecimiento por escrito." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       )
     ),
     br(),
@@ -416,7 +416,7 @@ design_ui <- function(id) {
           "5 - Se pilotean metodologías de monitoreo e indicadores." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -438,7 +438,7 @@ design_ui <- function(id) {
           "5 - Se crea grupo de monitoreo comunitario." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -460,7 +460,7 @@ design_ui <- function(id) {
           "5 - Al menos el 50 % de los integrantes de grupos de monitoreo son mujeres." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -482,7 +482,7 @@ design_ui <- function(id) {
           "5 - Al menos el 50 % de los integrantes de grupos de monitoreo son juventudes." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -502,7 +502,7 @@ design_ui <- function(id) {
           "5 - El grupo de monitoreo comunitario cubre las necesidades locales." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -522,7 +522,7 @@ design_ui <- function(id) {
           "5 - Se esta implementando el plan de sostenibilidad financiera y los manejadores aumentan el porcentaje de aportación." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -544,7 +544,7 @@ design_ui <- function(id) {
           "5 - Se cuenta con una campaña de difusión y se ejecuta al 100%." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       )
     ),
     br(),
@@ -583,7 +583,7 @@ design_ui <- function(id) {
           "5 - Se implementan adaptaciones a componentes de manejo." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -605,7 +605,7 @@ design_ui <- function(id) {
           "5 - Herramienta de manejo renovada en mas de una ocasión." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       ),
       br(),
 
@@ -627,7 +627,7 @@ design_ui <- function(id) {
           "5 - Solución compartida con actores aledaños, regionales, nacionales o internacionales." = 5,
           "NA" = NA
         ),
-        selected = "3"
+        selected = NA
       )
     ),
     br(),
