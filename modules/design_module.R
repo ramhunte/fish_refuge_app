@@ -641,6 +641,44 @@ design_server <- function(id) {
   moduleServer(id, function(input, output, session) {
     # Return the input as a reactive
 
+    # returning all raw values
+    ds <- reactive({
+      c(
+        input$d1_1,
+        input$d1_2,
+        input$d1_3,
+        input$d1_4,
+        input$d1_5,
+
+        input$d2_1,
+        input$d2_2,
+        input$d2_3,
+
+        input$d3_1,
+        input$d3_2,
+        input$d3_3,
+        input$d3_4,
+        input$d3_5,
+        input$d3_6,
+        input$d3_7,
+        input$d3_8,
+
+        input$d4_1,
+        input$d4_2,
+        input$d4_3,
+        input$d4_4,
+        input$d4_5,
+        input$d4_6,
+        input$d4_7,
+
+        input$d5_1,
+        input$d5_2,
+        input$d5_3
+      )})
+
+
+
+    # returning means of phases
     d1 <- reactive({
       mean(
         as.numeric(
@@ -675,7 +713,8 @@ design_server <- function(id) {
             input$d3_4,
             input$d3_5,
             input$d3_6,
-            input$d3_7
+            input$d3_7,
+            input$d3_8
           )
         ),
         na.rm = TRUE
@@ -708,6 +747,7 @@ design_server <- function(id) {
       )
     })
 
+    # total mean
     d_tot <- reactive({
       mean(
         as.numeric(c(d1(), d2(), d3(), d4(), d5())),
@@ -716,6 +756,7 @@ design_server <- function(id) {
     })
 
     return(list(
+      ds = ds,
       d1 = d1,
       d2 = d2,
       d3 = d3,
@@ -724,23 +765,5 @@ design_server <- function(id) {
       d_tot = d_tot
     ))
 
-    # Value box percent change value
-    # output$d1_vb <- renderUI({
-    #   val <- round(d1(), 2)
-    #
-    #   # Set color based on value
-    #   color <- if (val >= 0 && val < 2) {
-    #     "red" # red
-    #   } else if (val >= 2 && val < 4) {
-    #     "yellow" # yellow-orange
-    #   } else if (val >= 4) {
-    #     "green" # green
-    #   } else {
-    #     "secondary" # fallback gray for NA or out of range
-    #   }
-    #
-    #   # HTML to change colors depending on value
-    #   HTML(paste0("<span style='color:", color, "'>", val, "%</span>"))
-    # })
   })
 }

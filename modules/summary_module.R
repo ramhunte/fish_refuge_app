@@ -137,18 +137,6 @@ summary_ui <- function(id) {
     br(),
     br(),
 
-    # fluidRow(
-    #   column(
-    #     width = 4,
-    #     offset = 4, # 12-column grid: 4 left, 4 middle, 4 right
-    #     value_box(
-    #       title = "puntuación total",
-    #       value = uiOutput(ns("tot_vb")),
-    #       showcase = bs_icon("check-circle-fill"),
-    #       theme_color = "success"
-    #     )
-    #   )
-    # ),
 
     div(style = "font-size: 24px;", textOutput(ns("promoventeOutput"))),
 
@@ -170,7 +158,7 @@ summary_ui <- function(id) {
 
     br(),
 
-    downloadButton(ns("d_desc"), "Descargar descripción")
+    downloadButton(ns("downBtn"), "Descargar datos")
   )
 }
 
@@ -226,19 +214,159 @@ summary_server <- function(id, h_vals, d_vals, g_vals, b_vals) {
 
     output$tot_vb <- val_ui(function() tot_avg())
 
-    ########################### Download buttons ############################
+    ########################### data frames ################################
 
-    # description
-    output$d_desc <- downloadHandler(
+    # Design
+
+    des_df <- reactive({
+      tmp <- des_tmp
+      tmp[1, c(1:10, 12:14, 16:23, 25:31, 33:35, 37:42)] <- c(
+        h_vals$promovente(),
+        h_vals$comunidad(),
+        h_vals$estado(),
+        h_vals$rm(),
+        h_vals$cat(),
+        d_vals$ds()[1],
+        d_vals$ds()[2],
+        d_vals$ds()[3],
+        d_vals$ds()[4],
+        d_vals$ds()[5],
+        d_vals$ds()[6],
+        d_vals$ds()[7],
+        d_vals$ds()[8],
+        d_vals$ds()[9],
+        d_vals$ds()[10],
+        d_vals$ds()[11],
+        d_vals$ds()[12],
+        d_vals$ds()[13],
+        d_vals$ds()[14],
+        d_vals$ds()[15],
+        d_vals$ds()[16],
+        d_vals$ds()[17],
+        d_vals$ds()[18],
+        d_vals$ds()[19],
+        d_vals$ds()[20],
+        d_vals$ds()[21],
+        d_vals$ds()[22],
+        d_vals$ds()[23],
+        d_vals$ds()[24],
+        d_vals$ds()[25],
+        d_vals$ds()[26],
+        d_vals$d1(),
+        d_vals$d2(),
+        d_vals$d3(),
+        d_vals$d4(),
+        d_vals$d5(),       # this is the actual value
+        d_vals$d_tot()     # not the rendered UI output
+      )
+      tmp
+    })
+
+
+
+    # Governance
+    gov_df <- reactive({
+      tmp <- gov_tmp
+      tmp[1, c(1:8, 10:17, 19:24, 26:29)] <- c(
+        h_vals$promovente(),
+        h_vals$comunidad(),
+        h_vals$estado(),
+        h_vals$rm(),
+        h_vals$cat(),
+        g_vals$gs()[1],
+        g_vals$gs()[2],
+        g_vals$gs()[3],
+        g_vals$gs()[4],
+        g_vals$gs()[5],
+        g_vals$gs()[6],
+        g_vals$gs()[7],
+        g_vals$gs()[8],
+        g_vals$gs()[9],
+        g_vals$gs()[10],
+        g_vals$gs()[11],
+        g_vals$gs()[12],
+        g_vals$gs()[13],
+        g_vals$gs()[14],
+        g_vals$gs()[15],
+        g_vals$gs()[16],
+        g_vals$gs()[17],
+        g_vals$g1(),
+        g_vals$g2(),
+        g_vals$g3(),       # this is the actual value
+        g_vals$g_tot()     # not the rendered UI output
+      )
+      tmp
+    })
+
+
+    # Biological
+    bio_df <- reactive({
+      tmp <- bio_tmp
+      tmp[1, c(1:16, 18, 19)] <- c(
+        h_vals$promovente(),
+        h_vals$comunidad(),
+        h_vals$estado(),
+        h_vals$rm(),
+        h_vals$cat(),
+        b_vals$bs()[1],
+        b_vals$bs()[2],
+        b_vals$bs()[3],
+        b_vals$bs()[4],
+        b_vals$bs()[5],
+        b_vals$bs()[6],
+        b_vals$bs()[7],
+        b_vals$bs()[8],
+        b_vals$bs()[9],
+        b_vals$bs()[10],
+        b_vals$bs()[11],
+        b_vals$b1(),       # this is the actual value
+        b_vals$b_tot()     # not the rendered UI output
+      )
+      tmp
+    })
+
+
+    ########################### Download button ############################
+
+    output$downBtn <- downloadHandler(
       filename = function() {
-        "descripción.csv"
+        "datos.zip"
       },
       content = function(file) {
-        file.copy("data/description.csv", file)
+        # Create a temp dir to hold individual CSVs
+        tmpdir <- tempdir()
+        des_path <- file.path(tmpdir, "gestión_y_diseño.csv")
+        gov_path <- file.path(tmpdir, "gobernanza.csv")
+        bio_path <- file.path(tmpdir, "biológica.csv")
+
+        # Static file path
+        static_src <- "data/description.csv"
+        static_dst <- file.path(tmpdir, "descripción.csv")
+
+        # Write each data frame
+        write.csv(des_df(), des_path, row.names = FALSE)
+        write.csv(gov_df(), gov_path, row.names = FALSE)
+        write.csv(bio_df(), bio_path, row.names = FALSE)
+
+        # Copy the static file
+        file.copy(static_src, static_dst, overwrite = TRUE)
+
+
+
+        # Zip them
+        zip::zipr(
+          zipfile = file,
+          files = c(des_path, gov_path, bio_path, static_dst),
+          root = tmpdir
+        )
       },
-      contentType = "text/csv"
+      contentType = "application/zip"
     )
 
-    # description
+
+
   })
 }
+
+
+

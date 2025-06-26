@@ -270,6 +270,22 @@ biological_ui <- function(id) {
 
 biological_server <- function(id) {
   moduleServer(id, function(input, output, session) {
+
+    bs <- reactive({
+      c(
+      input$b1_1,
+      input$b1_2,
+      input$b1_3,
+      input$b1_4,
+      input$b1_5,
+      input$b1_6,
+      input$b1_7,
+      input$b1_8,
+      input$b1_9,
+      input$b1_10,
+      input$b1_11
+    )})
+
     b1 <- reactive({
       mean(
         as.numeric(
@@ -298,11 +314,9 @@ biological_server <- function(id) {
       )
     })
 
-    # data frame
-    df <- reactive({
-    })
 
     return(list(
+      bs = bs,
       b1 = b1,
       b_tot = b_tot
     ))

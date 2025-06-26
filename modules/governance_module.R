@@ -448,6 +448,29 @@ governance_ui <- function(id) {
 
 governance_server <- function(id) {
   moduleServer(id, function(input, output, session) {
+
+    gs <- reactive({
+      c(
+        input$g1_1,
+        input$g1_2,
+        input$g1_3,
+        input$g2_1,
+        input$g2_2,
+        input$g2_3,
+        input$g2_4,
+        input$g2_5,
+        input$g2_6,
+        input$g2_7,
+        input$g2_8,
+        input$g3_1,
+        input$g3_2,
+        input$g3_3,
+        input$g3_4,
+        input$g3_5,
+        input$g3_6
+      )})
+
+
     g1 <- reactive({
       mean(
         as.numeric(
@@ -503,17 +526,13 @@ governance_server <- function(id) {
     })
 
     return(list(
+      gs = gs,
       g1 = g1,
       g2 = g2,
       g3 = g3,
       g_tot = g_tot
 
-      #   observe({
-      #     cat("g1 =", g1(), "\n")
-      #     cat("g2 =", g2(), "\n")
-      #     cat("g3 =", g3(), "\n")
-      #     cat("g_tot =", g_tot(), "\n\n")
-      #   })
+
     ))
   })
 }
