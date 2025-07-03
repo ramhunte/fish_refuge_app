@@ -21,3 +21,4 @@ La matriz está agrupada en tres secciones que se compone de nueve fases, mismas
 **2. Gobernanza**: esta sección tiene tres fases y 17 componentes, los cuales hacen referencia al manejo de la ZRP mediante la colecta sistemática de información, acciones de vigilancia, el análisis y uso de datos, así como la toma de decisiones consensuadas.
 
 **3. Biológica**: esta sección tiene una fase y 11 componentes. Estos se enfocan en hacer notar los cambios desde el punto de vista biológico dentro de la ZRP.
+

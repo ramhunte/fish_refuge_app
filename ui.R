@@ -49,7 +49,8 @@ tagList(
           includeMarkdown("text/About.md")
         ),
         column(1)
-      )
+      ),
+      br()
     ),
 
     # START nav_panel Evaluate

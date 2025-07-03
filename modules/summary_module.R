@@ -15,11 +15,14 @@ summary_ui <- function(id) {
       div(
         div(
           style = "text-align: center;",
-          h1("Gestión y diseño")
+          h3("Gestión y diseño", style = "white-space: nowrap;")
         ),
 
         bslib::value_box(
-          title = "Puntuación total de gestión y diseño",
+          title = tags$span(
+            "Puntuación total: gestión y diseño",
+            style = "white-space: nowrap;"
+          ),,
           value = uiOutput(ns("d_tot_vb")),
           showcase = bs_icon("check-lg"),
           theme_color = "secondary"
@@ -68,10 +71,10 @@ summary_ui <- function(id) {
       div(
         div(
           style = "text-align: center;",
-          h1("Gobernanza")
+          h3("Gobernanza")
         ),
         bslib::value_box(
-          title = "Puntuación total de gobernanza",
+          title = "Puntuación total: gobernanza",
           value = uiOutput(ns("g_tot_vb")),
           showcase = bs_icon("check-lg"),
           theme_color = "secondary"
@@ -108,11 +111,11 @@ summary_ui <- function(id) {
       div(
         div(
           style = "text-align: center;",
-          h1("Biológica")
+          h3("Biológica")
         ),
 
         bslib::value_box(
-          title = "Puntuación biológica total",
+          title = "Puntuación total: biológica",
           value = uiOutput(ns("b_tot_vb")),
           showcase = bs_icon("check-lg"),
           theme_color = "secondary"
