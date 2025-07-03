@@ -5,6 +5,8 @@ library(DT)
 library(bslib)
 library(bsicons)
 library(janitor)
+library(markdown)
+library(rmarkdown)
 
 source("R/utils.R")
 source("R/header.R")
