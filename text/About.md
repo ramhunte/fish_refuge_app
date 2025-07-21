@@ -12,7 +12,7 @@ La matriz de diagnóstico es una herramienta que integra y ordena componentes qu
 
 **¿Qué modelo sigue?**
 
-La matriz está agrupada en tres secciones que se compone de nueve fases, mismas que consideran 54 componentes.
+La matriz está agrupada en tres secciones que se componen de nueve fases, mismas que consideran 54 componentes. Ayúdanos a mejorar y construir esta herramienta entre todos. Para cualquier aclaración o sugerencia comunícate con nosotros al correo [cobi@cobi.org.mx](mailto:cobi@cobi.org.mx)
 
 
 <br/>

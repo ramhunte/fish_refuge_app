@@ -5,6 +5,6 @@ account: innovacionazul
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 15030495
-bundleId: 10562276
+bundleId: 10652125
 url: https://innovacionazul.shinyapps.io/fish_refuge_app/
 version: 1
