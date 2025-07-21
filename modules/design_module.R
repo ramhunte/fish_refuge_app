@@ -42,9 +42,9 @@ design_ui <- function(id) {
       br(),
 
       # 1.2
-      h3("1.2 Identificar participantes y su nivel de involucramiento"),
+      h3("1.2 Identificar participantes y su nivel de involucramiento."),
       p(
-        "Hacer un listado de problemáticas ambientales que se busca atender, considerando las causas y actores que dieron origen a este problema, y qué resultado se espera obtener. Este ejercicio se deberá de hacer con actores clave locales. Se imparte platica general de herramientas de manejo."
+        "Hacer un listado de problemáticas ambientales que se busca atender, considerando las causas y actores que dieron origen a este problema, y qué resultado se espera obtener. Este ejercicio se deberá de hacer con actores clave locales. Se imparte plática general de herramientas de manejo."
       ),
       selectInput(
         inputId = ns("d1_2"),
@@ -141,7 +141,7 @@ design_ui <- function(id) {
       # 2.1
       h3("2.1 Reuniones con líderes clave."),
       p(
-        "Se debe de presentar la iniciativa de herramienta de manejo pesquero a los lideres del sectores de interés ( sector pesquero, turístico, gobierno municipal, estatal, federal, etc.). Invitarlos a formar parte de la iniciativa, además de solicitar su apoyo para  liderar la difusión de la herramienta de manejo pesquero."
+        "Se debe de presentar la iniciativa de herramienta de manejo pesquero a los líderes del sectores de interés ( sector pesquero, turístico, gobierno municipal, estatal, federal, etc.). Invitarlos a formar parte de la iniciativa, además de solicitar su apoyo para  liderar la difusión de la herramienta de manejo pesquero."
       ),
       selectInput(
         inputId = ns("d2_1"),
@@ -161,7 +161,7 @@ design_ui <- function(id) {
       # 2.2
       h3("2.2 Reuniones sectoriales o multisectoriales."),
       p(
-        "Con el apoyo de participantes clave (locales), se presenta la información a la mayor cantidad de personas posibles, con la finalidad de dar a conocer la iniciativa, los objetivos y sus alcances. Por ejemplo, sector pesquero, turístico, restaurantero, gobierno municipal, estatal, federal, etc.)"
+        "Con el apoyo de participantes clave (locales), se presenta la información a la mayor cantidad de personas posibles, con la finalidad de dar a conocer la iniciativa, los objetivos y sus alcances. Por ejemplo, sector pesquero, turístico, restaurantero, gobierno municipal, estatal, federal, etc."
       ),
       selectInput(
         inputId = ns("d2_2"),
@@ -208,7 +208,7 @@ design_ui <- function(id) {
       style = "text-align: center;",
       h2("Fase #3: Diseño"),
       p(
-        "Este proceso involucra la socialización con participantes primarios para determinar:  la forma, tamaño, localización, modalidad, el tipo de protección, objetivos de la herramienta de manejo, especies objetivo, temporalidad, indicadores de evaluación. Las acciones, costos, responsabilidades y tiempos de cumplimiento. Así como el proceso para solicitar la herramienta de manejo. (Actores primarios se refiere a aquellos grupos de personas que toman decisiones respecto al diseño y establecimiento del herramienta de manejo)."
+        "Este proceso involucra la socialización con participantes primarios para determinar:  la forma, tamaño, localización, modalidad, el tipo de protección, objetivos de la herramienta de manejo, especies objetivo, temporalidad, indicadores de evaluación. Las acciones, costos, responsabilidades y tiempos de cumplimiento. Así como el proceso para solicitar la herramienta de manejo. (Actores primarios se refiere a aquellos grupos de personas que toman decisiones respecto al diseño y establecimiento de la herramienta de manejo)."
       )
     ),
     br(),
@@ -237,7 +237,7 @@ design_ui <- function(id) {
 
       # 3.2
       h3(
-        "3.2 Diseño participativo para establecer  objetivos, especies a protege e indicadores de evaluación de evaluación biológica."
+        "3.2 Diseño participativo para establecer  objetivos, especies a proteger e indicadores de evaluación biológica."
       ),
       p(
         "El proceso de diseño debe de ser transparente, planeado y consensuado. Además se deben de rendir cuentas de las acciones y recursos económicos aplicados. Los objetivos de la herramienta de manejo y las especies a proteger son elaborados con el apoyo de información biológica y ambiental, y basados en el conocimiento local. Los indicadores de evaluación deberán de ser realistas y alcanzables (por ejemplo: biomasa, abundancia, estructura de tallas, diversidad). Se recomienda considerar los principios biofísicos para maximizar el éxito del diseño."
@@ -469,7 +469,7 @@ design_ui <- function(id) {
         "4.4 Juventudes participan en la capacitación para monitoreo biofísico y manejo de datos."
       ),
       p(
-        "Se integran juventudes en el proceso de certificación de buceo, metodologías para el monitoreo biológico,  oceanográfico de reservas marinas, así como el manejo de datos. (una juventud es una persona de 18 a 29 años de edad)."
+        "Se integran juventudes en el proceso de certificación de buceo, metodologías para el monitoreo biológico,  oceanográfico de reservas marinas, así como el manejo de datos. Una juventud es una persona de 18 a 29 años de edad."
       ),
       selectInput(
         inputId = ns("d4_4"),
